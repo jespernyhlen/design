@@ -19,10 +19,8 @@ views:
 Om
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+Detta är min me/redovisnings-sida i kursen "Design (v2)" och  handlar om teknisk webbdesign och användbarhet.
 
-Skriv några kloka ord om kursen?
+Under tiden som jag arbetar igenom kursmomenten kommer denna sida ständigt att uppdateras för att bli mer personlig och förbättrad.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/web_design.png?w=500 alt="Design för olika plattformer."]
