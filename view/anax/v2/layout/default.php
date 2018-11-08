@@ -17,6 +17,7 @@ $title = ($title ?? "No title") . ($baseTitle ?? " | No base title defined");
     <meta charset="utf-8">
     <title><?= $title ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,600" rel="stylesheet">
 
 <?php if (isset($favicon)) : ?>
     <link rel="icon" href="<?= $favicon ?>">
