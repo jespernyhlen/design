@@ -1,10 +1,25 @@
 /*!
  * LESS version of the stylesheet for design kmom01.
  *
- * This stylesheet is for the design course and kmom01. Its intention is to
- * use kmom01.css and lessify the style and use this as a wrapper for the new
- * style.
+ * This stylesheet is for the design course and kmom02.
+ *
  */
+
+ /**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
 
 /**
  * Internal self contained modules, save in directory module/.
@@ -29,6 +44,14 @@
 @import "layout/layout_kmom02.less";
 @import "layout/responsive.less";
 @import "layout/regions.less";     // To add style for ?regions
+
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
 
 
 
