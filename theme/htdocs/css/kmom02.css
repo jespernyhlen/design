@@ -5,6 +5,13 @@
  *
  */
 /**
+* Normalize and reset the style.
+*/
+/**
+ * A small clearfix:
+ * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
+ */
+/**
  * Normalize and reset the style.
  */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -4381,13 +4388,10 @@ img {
 .left {
   float: left;
 }
-.row {
-  overflow: auto;
-}
 .row::after {
   content: "";
+  display: block;
   clear: both;
-  display: table;
 }
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
