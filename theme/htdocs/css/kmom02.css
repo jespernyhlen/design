@@ -4369,16 +4369,10 @@ img {
  * General layout
  */
 .inner-wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1260px;
-}
-.outer-wrap-main {
-  max-width: 1440px;
   margin: 0 auto;
+  max-width: 1080px;
 }
 .inner-wrap-main {
-  max-width: 960px;
   padding: 0 0 70px;
 }
 .right {
@@ -4421,49 +4415,35 @@ a:active {
   color: #2d0000;
 }
 /********** HEADER *********/
-.region-header {
-  height: 80px;
-  padding-bottom: 20px;
-  padding-top: 10px;
+.inner-wrap-header {
+  max-width: 100%;
 }
 .outer-wrap-header a {
   text-decoration: none;
-  color: #000;
   font-size: 1.3em;
 }
-.region-header-col-1 {
-  display: inline;
+.region-header-col-1,
+.region-header-col-3 {
   float: left;
   width: 15%;
+}
+.region-header-col-2 {
+  float: left;
+  width: 70%;
+  text-align: center;
 }
 .site-logo-text-icon {
   float: left;
   padding-right: 10px;
 }
-.region-header-col-2 {
-  display: inline;
-  float: left;
-  width: 69.7%;
-  text-align: center;
-}
-.region-header-col-3 {
-  display: inline;
-  float: left;
-  width: 15%;
-}
-.region-header ul {
-  margin: 0;
-}
-.region-header li {
-  display: inline-block;
-  margin: 0 25px;
-}
 .site-logo {
   display: none;
 }
-.region-flash img {
-  margin: auto;
-  width: 1260px;
+.inner-wrap-flash {
+  max-width: 1260px;
+}
+.inner-wrap-flash img {
+  width: 100%;
 }
 /********** MAIN *********/
 .region-main.has-sidebar-right {
@@ -4497,14 +4477,13 @@ a:active {
   border-bottom: 1px solid #ccc;
   background-color: #eee;
 }
-.inner-wrap-breadcrumb {
-  max-width: 960px;
-}
 .region-breadcrumb {
   display: inline;
   float: left;
-  width: 100%;
   margin: 0 1%;
+}
+.breadcrumb-list ul {
+  padding: 0;
 }
 .next-previous {
   width: 100%;
@@ -4536,10 +4515,7 @@ figure.left {
   padding-bottom: 48px;
 }
 .inner-wrap-footer {
-  width: 960px;
-}
-.region-footer {
-  display: inline;
+  max-width: 1080px;
 }
 .footer-column-wrapper {
   color: #ddd;
@@ -4549,7 +4525,6 @@ figure.left {
   float: left;
 }
 .footer-column {
-  display: inline;
   width: 31%;
   margin-left: 1.1%;
   margin-right: 1.1%;
