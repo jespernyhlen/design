@@ -4450,31 +4450,32 @@ a:active {
   width: 100%;
 }
 /********** MAIN *********/
-.region-main.has-sidebar-right {
-  display: inline;
+.region-main {
+  width: 100%;
   float: left;
-  width: 64.5%;
-  margin-right: 3%;
 }
-.region-sidebar-left,
-.region-sidebar-right {
-  display: inline;
-  float: left;
-  width: 29%;
-  margin: 0 1%;
+.region-main.has-sidebar {
+  max-width: 70%;
 }
 .region-main.has-sidebar-left {
-  display: inline;
-  float: left;
-  width: 64.5%;
-  margin-left: 3%;
+  padding-left: 30px;
+}
+.region-main.has-sidebar-right {
+  padding-right: 30px;
+}
+.region-main.has-sidebar-left.has-sidebar-right {
+  width: 60%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .region-sidebar-left,
 .region-sidebar-right {
-  display: inline;
   float: left;
-  width: 29%;
-  margin: 0 1%;
+  width: 30%;
+}
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+  width: 20%;
 }
 .wrap-sidebar .block h4 {
   padding: 5px;
@@ -4484,7 +4485,7 @@ a:active {
 .region-breadcrumb {
   display: inline;
   float: left;
-  margin: 0 1%;
+  margin: 0;
 }
 .breadcrumb-list ul {
   padding: 0;
@@ -4495,10 +4496,10 @@ a:active {
 .next {
   float: right;
   text-align: right;
-  width: 48.9%;
+  width: 50%;
 }
 .previous {
-  width: 48.9%;
+  width: 50%;
 }
 .toc {
   padding-left: 0;
