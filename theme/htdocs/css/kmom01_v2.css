@@ -282,6 +282,40 @@ figure.left {
     width: 50%;
   }
 }
+@media screen and (max-width: 750px) {
+  .region-main {
+    width: 100%;
+    float: left;
+  }
+  .region-main.has-sidebar {
+    max-width: 100%;
+  }
+  .region-main.has-sidebar-left {
+    padding: 0;
+  }
+  .region-main.has-sidebar-right {
+    padding: 0;
+  }
+  .region-main.has-sidebar-left.has-sidebar-right {
+    width: 100%;
+    padding: 0;
+  }
+  .region-sidebar-left,
+  .region-sidebar-right {
+    float: left;
+    width: 100%;
+  }
+  .region-sidebar-left.has-sidebar-right,
+  .region-sidebar-right.has-sidebar-left {
+    width: 100%;
+  }
+  .inner-wrap-main {
+    padding: 20px;
+  }
+  .region-breadcrumb {
+    padding: 0 20px;
+  }
+}
 /**
  * Show off the regions used in the website, to ease styling.
  */
