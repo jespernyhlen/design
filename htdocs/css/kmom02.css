@@ -5,7 +5,7 @@
  *
  */
 /**
-* Normalize and reset the style.
+* Import mixins.
 */
 /**
  * A small clearfix:
@@ -4344,7 +4344,7 @@ template {
   box-sizing: border-box;
 }
 html {
-  font-size: 20px;
+  font-size: 18px;
   overflow-y: scroll;
   background-color: #424242;
 }
@@ -4394,9 +4394,6 @@ img {
   clear: both;
 }
 /* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-  display: none;
-}
 /********* LINKS **********/
 /* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
@@ -4435,6 +4432,9 @@ a:active {
   float: left;
   width: 70%;
   text-align: center;
+}
+.rm-desktop li a {
+  padding: 1em;
 }
 .site-logo-text-icon {
   float: left;
@@ -4545,6 +4545,30 @@ figure.left {
 @media screen and (max-width: 1500px) {
   .site-logo {
     display: none;
+  }
+}
+/**
+ * NAVBAR
+ */
+@media screen and (max-width: 1100px) {
+  .rm-desktop li a {
+    padding: 0.3em;
+  }
+}
+@media screen and (max-width: 830px) {
+  .rm-small {
+    display: block;
+  }
+  .rm-desktop {
+    display: none;
+  }
+  .rm-navbar-max {
+    display: block;
+  }
+  .region-header-col-1,
+  .region-header-col-3 {
+    float: left;
+    width: 50%;
   }
 }
 /**
@@ -4805,25 +4829,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-max.rm-swipe-right .rm-mobile {
   right: 0;
-}
-/**
- * Style for responsive menu
- */
-/**
-  * Example on media queries
-  */
-@media screen and (max-width: 680px) {
-  .rm-small {
-    display: block;
-  }
-  .rm-desktop {
-    display: none;
-  }
-}
-@media screen and (min-width: 680px) {
-  .rm-small {
-    display: none;
-  }
 }
 /**
  * My own settings, not currently in their own module.
