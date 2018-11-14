@@ -58,6 +58,9 @@ fieldset select {
   font-style: italic;
   font-weight: bold;
 }
+figure {
+  margin: 20px;
+}
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
@@ -283,8 +286,14 @@ figure.left {
   .region-header-col-2 {
     width: 66%;
   }
+  figure {
+    margin: 10px 0;
+  }
 }
 @media screen and (max-width: 840px) {
+  h1 {
+    font-size: 1.5em;
+  }
   /**
      * NAVBAR
      */
@@ -360,6 +369,11 @@ figure.left {
   .footer-column-2,
   .footer-column-3 {
     padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.3em;
   }
 }
 /**
