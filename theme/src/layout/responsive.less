@@ -53,10 +53,12 @@
 
         &.has-sidebar-left {
             padding: 0;
+            border: none;
         }
 
         &.has-sidebar-right {
             padding: 0;
+            border: none;
         }
 
         &.has-sidebar-left.has-sidebar-right {
@@ -67,8 +69,8 @@
 
     .region-sidebar-left,
     .region-sidebar-right {
-        float: left;
         width: 100%;
+        padding: 0;
     }
 
     .region-sidebar-left.has-sidebar-right,
@@ -88,34 +90,22 @@
      * FOOTER
      */
 
-    .outer-wrap-footer {
-        background-color: #424242;
-        padding: 0 20px 40px 20px;
-    }
+     .inner-wrap-footer {
+         padding: 20px;
+     }
 
     .footer-column-wrapper {
-        color: #ddd;
-        border-bottom: 1px solid #666;
         padding-bottom: 24px;
-        margin-bottom: 48px;
-        float: left;
     }
 
     .footer-column {
         width: 100%;
-        float: left;
     }
 
     .footer-column-1,
     .footer-column-2,
     .footer-column-3 {
         padding: 0;
-    }
-
-    .site-footer {
-        color: #bbb;
-        text-align: center;
-        padding-bottom: 24px;
     }
 
 }
