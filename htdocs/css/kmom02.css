@@ -4431,7 +4431,7 @@ a:active {
   color: #2d0000;
 }
 /********** HEADER *********/
-/* Hide responsive/mobile menu, leave this to kmom02 */
+/* Hide responsive/mobile menu */
 .rm-navbar-max {
   display: none;
 }
