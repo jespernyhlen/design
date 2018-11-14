@@ -10,17 +10,25 @@
 
 @media screen and (max-width: 1100px) {
     .rm-desktop li a {
-        padding: 0.3em;
+        padding: 1em 0.3em;
+    }
+
+    .region-header-col-1,
+    .region-header-col-3 {
+        width: 17%;
+    }
+    .region-header-col-2 {
+        width: 66%;
     }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 840px) {
     /**
      * NAVBAR
      */
 
     .rm-small {
-        display: block;
+        display: inline;
     }
 
     .rm-desktop {
@@ -28,7 +36,7 @@
     }
 
     .rm-navbar-max {
-        display: block;
+        display: inline;
     }
 
     .region-header-col-1,
@@ -39,6 +47,10 @@
 }
 
 @media screen and (max-width: 750px) {
+    #rm-menu {
+        max-width: 100%;
+    }
+
     /**
      * MAIN
      */
@@ -90,9 +102,9 @@
      * FOOTER
      */
 
-     .inner-wrap-footer {
-         padding: 20px;
-     }
+    .inner-wrap-footer {
+        padding: 20px;
+    }
 
     .footer-column-wrapper {
         padding-bottom: 24px;
