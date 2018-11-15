@@ -1,5 +1,5 @@
 /*!
- * LESS version of the stylesheet for design kmom01.
+ * LESS version of the stylesheet for design kmom02.
  *
  * This stylesheet is for the design course and kmom02.
  *
@@ -4344,7 +4344,6 @@ template {
   box-sizing: border-box;
 }
 html {
-  font-size: 18px;
   overflow-y: scroll;
   background-color: #424242;
 }
@@ -4353,7 +4352,7 @@ body {
   padding: 0;
   color: #111;
   background-color: #f7f7fa;
-  font: 100.01%/1 'Oswald', sans-serif;
+  font: 100.01%/1 sans-serif;
 }
 li {
   list-style: none;
@@ -4440,6 +4439,7 @@ a:active {
   top: 0px;
   right: 4px;
   font-size: 30px;
+  padding: 0.6em;
 }
 #rm-menu {
   max-width: 30%;
@@ -4455,18 +4455,16 @@ a:active {
 .inner-wrap-header a {
   text-decoration: none;
   font-size: 1.2em;
-  padding: 22px;
+  padding: 1em;
 }
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
-  outline: 1px solid #fff;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {
   transition: all 0.9s;
   text-decoration: none;
   color: #3c3a3a;
   background-color: rgba(25, 122, 21, 0.1);
-  outline: 1px solid #f7f7fa;
 }
 .region-header-col-1,
 .region-header-col-3 {
@@ -4480,10 +4478,6 @@ a:active {
   background-color: #fff;
   border-left: 2px solid #ddd;
   border-right: 2px solid #ddd;
-}
-.region-header {
-  height: 57px;
-  margin-bottom: 10px;
 }
 .region-header::after {
   content: "";

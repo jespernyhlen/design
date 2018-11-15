@@ -27,7 +27,6 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 18px;
   overflow-y: scroll;
   background-color: #424242;
 }
@@ -36,7 +35,7 @@ body {
   padding: 0;
   color: #111;
   background-color: #f7f7fa;
-  font: 100.01%/1 'Oswald', sans-serif;
+  font: 100.01%/1 sans-serif;
 }
 li {
   list-style: none;
