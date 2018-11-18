@@ -1,0 +1,298 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+@generalBorder: 2px solid #ddd;
+@generalPadding: 20px;
+@bgColor: #fff;
+
+/**
+ * General layout
+ */
+.inner-wrap {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.inner-wrap-main {
+    background-color: @bgColor;
+    padding: 20px 20px 80px 20px;
+    border-left: @generalBorder;
+    border-right: @generalBorder;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.row {
+    .clearfix();
+}
+
+/********* LINKS **********/
+
+/* unvisited link */
+a:link {
+    color: #2d0000;
+}
+
+/* visited link */
+a:visited {
+    color: #2d0000;
+}
+
+/* mouse over link */
+a:hover {
+    color: #a57f7f;
+}
+
+/* selected link */
+a:active {
+    color: #2d0000;
+}
+
+/********** HEADER *********/
+
+/* Hide responsive/mobile menu */
+.rm-navbar-max {
+    display: none;
+}
+
+#rm-menu-button {
+    position: fixed;
+    top: 0px;
+    right: 4px;
+    font-size: 30px;
+    padding: 0.6em;
+}
+
+#rm-menu {
+    max-width: 30%;
+    max-height: 90%;
+    background-color: #424242
+}
+
+.rm-show-submenu li a {
+    background-color: #424242;
+}
+
+.inner-wrap-header {
+    max-width: 100%;
+}
+
+.inner-wrap-header a {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.region-header-col-2 .rm-navbar ul li a {
+    text-decoration: none;
+}
+
+.region-header-col-2 .rm-navbar ul li a:hover {
+    transition: all 0.9s;
+    text-decoration: none;
+    color: #3c3a3a;
+    background-color: rgba(25, 122, 21, 0.1);
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    float: left;
+    width: 17.85%;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 64.3%;
+    text-align: center;
+    background-color: @bgColor;
+    border-left: @generalBorder;
+    border-right: @generalBorder;
+}
+
+.region-header {
+    .clearfix();
+}
+
+.rm-default ul li {
+    background-color: rgba(247, 247, 250, 0.8);
+}
+
+.site-logo-text a {
+    display: block;
+}
+
+.site-logo-text-icon img {
+    float: left;
+    height: 25px;
+    padding-right: 10px;
+}
+
+.site-logo {
+    display: none;
+}
+
+.inner-wrap-flash {
+    max-width: 1440px;
+}
+
+.inner-wrap-flash img {
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 4px 2px rgba(112,111,101,1);
+    -moz-box-shadow: 0px 1px 4px 2px rgba(112,111,101,1);
+    box-shadow: 0px 1px 4px 2px rgba(112,111,101,1);
+}
+
+/********** MAIN *********/
+
+.region-main {
+    width: 100%;
+    float: left;
+
+    &.has-sidebar {
+        max-width: 70%;
+    }
+
+    &.has-sidebar-left {
+        padding-left: @generalPadding;
+        border-left: 2px solid #f5f5f5;
+    }
+
+    &.has-sidebar-right {
+        padding-right: @generalPadding;
+        border-right: 2px solid #f5f5f5;
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        width: 60%;
+        padding-left: @generalPadding;
+        padding-right: @generalPadding;
+    }
+}
+
+.region-sidebar-left {
+    float: left;
+    width: 30%;
+    padding-right: @generalPadding;
+}
+
+.region-sidebar-right {
+    float: left;
+    width: 30%;
+    padding-left: @generalPadding;
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 20%;
+}
+
+.wrap-sidebar .block h4 {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.inner-wrap-breadcrumb {
+    padding: 0 @generalPadding;
+    background-color: @bgColor;
+    border-bottom: 2px solid #f5f5f5;
+    border-left: @generalBorder;
+    border-right: @generalBorder;
+}
+
+.region-breadcrumb {
+    display: inline;
+    float: left;
+    margin: 0;
+}
+
+.breadcrumb-list ul {
+    padding: 0;
+}
+
+.next-previous {
+    width: 100%;
+}
+
+.next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+.previous {
+    width: 50%;
+}
+
+.toc {
+    padding-left: 0;
+}
+
+/********** BYLINE *********/
+
+.author-byline {
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    padding: 0.8em;
+}
+
+figure.left {
+    margin: 0 10px 0 0;
+}
+
+/********** FOOTER *********/
+
+.outer-wrap-footer {
+    background-color: #424242;
+    padding-bottom: 48px;
+}
+
+.inner-wrap-footer {
+    max-width: 1080px;
+    padding: @generalPadding;
+    border-left: 2px solid #383838;
+    border-right: 2px solid #383838;
+}
+
+.footer-column-wrapper {
+    color: #ddd;
+    border-bottom: 1px solid #666;
+    margin-bottom: 48px;
+    float: left;
+}
+
+.footer-column {
+    width: 33.31%;
+    float: left;
+    padding-bottom: @generalPadding;
+}
+
+.footer-column-1 {
+    padding-right: 5px;
+}
+
+.footer-column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.footer-column-3 {
+    padding-left: 5px;
+}
+
+.site-footer {
+    color: #bbb;
+    text-align: center;
+}

@@ -1,7 +1,7 @@
 /*!
- * LESS version of the stylesheet for design kmom02.
+ * LESS version of the stylesheet for design kmom03.
  *
- * This stylesheet is for the design course and kmom02.
+ * This stylesheet is for the design course and kmom03.
  *
  */
 
@@ -42,17 +42,35 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
-@import "base/base.less";
+@import "base/base_kmom03.less";
 
 
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid_kmom03.less";
+
+// // Default grid, change to fit your requirements.
+// @columnWidth:   30;
+// @gutterWidth:   10;
+// @columns:       24;
+// @gridType:      "float"; // "flex"
+
+.row {
+    #desinax-vgrid.row();
+    background-color: #0f0;
+    margin-bottom: 12px;
+}
 
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
 //@import "layout/layout.less";
-@import "layout/layout_kmom02.less";
-@import "layout/responsive.less";
+//@import "layout/layout_kmom02.less";
+//@import "layout/responsive.less";
 @import "layout/regions.less";     // To add style for ?regions
 
 

@@ -1,0 +1,52 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #424242;
+@bgColorBody: #f7f7fa;
+@colorBody: #111;
+@fontFamilyBody: sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    font: 100.01%/1 @fontFamilyBody;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+fieldset {
+    width: 99%;
+    max-width: 99%;
+    min-width: 99%;
+    float:left;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+fieldset select {
+    width: 99%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+figure {
+    margin: 20px;
+}

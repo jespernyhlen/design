@@ -1,7 +1,7 @@
 /*!
- * LESS version of the stylesheet for design kmom02.
+ * LESS version of the stylesheet for design kmom03.
  *
- * This stylesheet is for the design course and kmom02.
+ * This stylesheet is for the design course and kmom03.
  *
  */
 /**
@@ -4378,9 +4378,37 @@ figure {
   margin: 20px;
 }
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
+ * Import the vertical grid.
  */
+/**
+ * Fluid and Responsive Vertical Grid
+ */
+/**
+ * Namespace what could be namespaced
+ */
+#desinax-vgrid {
+  /**
+     * Wrap grid in a container.
+     */
+  /**
+     * Show grid.
+     */
+  /**
+     * All columns must be wrapped in a row.
+     */
+  /**
+     * Create a column spanning @col columns.
+     */
+  /**
+     * Push a column @offset columns.
+     */
+  /**
+     * Pull a column left @offset columns.
+     */
+  /**
+     * Pull a column right @offset columns.
+     */
+}
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
@@ -4621,6 +4649,23 @@ figure.left {
   color: #bbb;
   text-align: center;
 }
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+  background-color: #0f0;
+  margin-bottom: 12px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
 /**
  * Layout for responsive style through media queries.
  */
