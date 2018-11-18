@@ -4527,6 +4527,13 @@ a:active {
 .site-logo {
   display: none;
 }
+.region-flash {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
 .inner-wrap-flash img {
   -webkit-box-shadow: 0px 1px 4px 2px #706f65;
   -moz-box-shadow: 0px 1px 4px 2px #706f65;
@@ -4558,6 +4565,13 @@ a:active {
   border-bottom: 1px solid #ccc;
   background-color: #eee;
 }
+.region-breadcrumb {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
 .next {
   text-align: right;
 }
@@ -4582,8 +4596,13 @@ a:active {
   margin-right: 0.52083333%;
 }
 .site-footer {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
   color: #bbb;
-  text-align: ;
+  text-align: center;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
