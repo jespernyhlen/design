@@ -4370,13 +4370,22 @@ template {
      * Enable all default typographic elements.
      */
 }
+.hgrid .inner-wrap {
+  background-image: url("../img/magic-number-24px.png");
+}
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "serif";
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -4500,7 +4509,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: "monospace";
+  font-family: "Courier New", Courier, monospace;
 }
 code,
 samp {
@@ -4654,15 +4663,6 @@ hr::after {
   padding: 0 0.25em;
   background-color: #fff;
 }
-.hgrid .inner-wrap {
-  background-image: url("../img/magic-number-24px.png");
-}
-/**
- * Base style to affect HTML elements on a general scale.
- */
-/**
- * Base style to affect HTML elements on a general scale.
- */
 * {
   box-sizing: border-box;
 }
@@ -4671,7 +4671,7 @@ html {
   background-color: #424242;
 }
 body {
-  font: 16px/1.5 "sans-serif";
+  font: 16px/1.5 Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #111;

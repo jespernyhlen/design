@@ -45,17 +45,14 @@
 @import "@desinax/typographic-grid/less/typography-font-families.less";
 @import "@desinax/typographic-grid/less/typography-defaults.less";
 
-
-
-// Activate grid and affect all typographic elements
-#desinax-hgrid.activateDefaultTypography();
-
-
 // Show the grid
 .hgrid .inner-wrap {
     @gridImage: "../img/magic-number-@{magicNumber}.png";
     #desinax-hgrid.showGrid(@gridImage);
 }
+
+
+
 /**
  * Base style to affect HTML elements on a general scale.
  */
@@ -99,3 +96,11 @@
 /**
  * My own settings, not currently in their own module.
  */
+// Magic number and default fontsize, together makes up base lineheight
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+// Adapt the typographic grid to my style
+@fontFamilyHeadings:  @fontFamilyCambria;
+@fontFamilyBody:      @fontFamilyCalibri;
+@fontFamilyCode:      @fontFamilyCourier;
