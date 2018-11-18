@@ -4892,9 +4892,10 @@ a:active {
 .region-main.has-sidebar-left.has-sidebar-right {
   display: inline;
   float: left;
-  width: 57.29166667%;
+  width: 48.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  margin-left: 4.6875%;
 }
 .region-sidebar-right,
 .region-sidebar-left {
@@ -4914,6 +4915,9 @@ a:active {
   width: 19.79166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+}
+.region-sidebar-right.has-sidebar-left {
+  margin-left: 4.6875%;
 }
 .wrap-sidebar .block h4 {
   border-bottom: 1px solid #ccc;
@@ -4962,6 +4966,64 @@ a:active {
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
+/**
+ * Layout for responsive style through media queries.
+ */
+/********** RESPONSIVE 1, 2, 3 *********/
+@media screen and (max-width: 1000px) {
+  .region-main {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-main.has-sidebar-left.has-sidebar-right {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-main.has-sidebar-left {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-sidebar-left {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-sidebar-left.has-sidebar-right,
+  .region-sidebar-right.has-sidebar-left {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .region-main.has-sidebar-right {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-sidebar-right {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-right: 0.52083333%;
+    margin-left: 0.52083333%;
+  }
+}
 /**
  * Show off the regions used in the website, to ease styling.
  */

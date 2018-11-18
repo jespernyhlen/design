@@ -206,7 +206,8 @@ a:active {
     }
 
     &.has-sidebar-left.has-sidebar-right {
-        #desinax-vgrid.column(@columns - 10);
+        #desinax-vgrid.column(@columns * 2 / 4);
+        #desinax-vgrid.push(1);
         // width: 60%;
         // padding-left: @generalPadding;
         // padding-right: @generalPadding;
@@ -235,6 +236,10 @@ a:active {
 .region-sidebar-right.has-sidebar-left {
     #desinax-vgrid.column(@columns * 1 / 4 - 1);
     // width: 20%;
+}
+
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.push(1);
 }
 
 .wrap-sidebar .block h4 {
