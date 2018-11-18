@@ -4654,6 +4654,9 @@ hr::after {
   padding: 0 0.25em;
   background-color: #fff;
 }
+.hgrid .inner-wrap {
+  background-image: url("../img/magic-number-24px.png");
+}
 /**
  * Base style to affect HTML elements on a general scale.
  */

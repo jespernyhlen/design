@@ -51,7 +51,11 @@
 #desinax-hgrid.activateDefaultTypography();
 
 
-
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
 /**
  * Base style to affect HTML elements on a general scale.
  */
