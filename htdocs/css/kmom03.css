@@ -4427,6 +4427,26 @@ figure {
 .inner-wrap-main {
   background-color: #fff;
 }
+.vgrid .inner-wrap {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 1100px) {
+  .vgrid .inner-wrap {
+    background-size: 1100px auto;
+  }
+}
+.vgrid .inner-wrap.inner-wrap-header,
+.vgrid .inner-wrap.inner-wrap-footer {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 100%) {
+  .vgrid .inner-wrap.inner-wrap-header,
+  .vgrid .inner-wrap.inner-wrap-footer {
+    background-size: 100% auto;
+  }
+}
 .row {
   display: block;
   width: 101.04166667%;
@@ -4563,7 +4583,7 @@ a:active {
 }
 .site-footer {
   color: #bbb;
-  text-align: center;
+  text-align: ;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
