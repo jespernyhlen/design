@@ -75,20 +75,31 @@ a:active {
     display: none;
 }
 
+.rm-modal {
+    #desinax-vgrid.grid(@columns);
+}
+
 #rm-menu-button {
-    // position: fixed;
-    // top: 0px;
-    // right: 4px;
-    // font-size: 30px;
-    // padding: 0.6em;
+    position: fixed;
+    top: 0px;
+    right: 4px;
+    font-size: @magicNumber;
+    padding-top: 0.4em;
+    padding-right: 0.8em;
 }
 
 #rm-menu {
+    max-width: 100%;
     background-color: #424242
 }
 
+
 .rm-show-submenu li a {
     background-color: #424242;
+}
+
+.region-header {
+    #desinax-vgrid.row();
 }
 
 .inner-wrap-header {

@@ -4481,11 +4481,36 @@ a:active {
 .rm-navbar-max {
   display: none;
 }
+.rm-modal {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 24;
+}
+#rm-menu-button {
+  position: fixed;
+  top: 0px;
+  right: 4px;
+  font-size: 24px;
+  padding-top: 0.4em;
+  padding-right: 0.8em;
+}
 #rm-menu {
+  max-width: 100%;
   background-color: #424242;
 }
 .rm-show-submenu li a {
   background-color: #424242;
+}
+.region-header {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+}
+.region-header::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .inner-wrap-header {
   margin-right: auto;
@@ -5071,6 +5096,22 @@ figure {
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
+  /********** NAVBAR *********/
+  .region-header-col-1 {
+    display: inline;
+    float: left;
+    width: 32.29166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .region-header-col-2 {
+    display: inline;
+    float: left;
+    width: 65.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 850px) {
   .region-main.has-sidebar-right {
@@ -5086,6 +5127,21 @@ figure {
     width: 98.95833333%;
     margin-right: 0.52083333%;
     margin-left: 0.52083333%;
+  }
+  /********** NAVBAR *********/
+  .rm-desktop {
+    display: none;
+  }
+  .rm-navbar-max {
+    display: inline;
+  }
+  .region-header-col-1,
+  .region-header-col-3 {
+    display: inline;
+    float: left;
+    width: 48.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
 }
 /**
