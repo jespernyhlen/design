@@ -63,6 +63,7 @@
 /* unvisited link */
 a:link {
     color: #2d0000;
+    text-decoration: none;
 }
 
 /* visited link */
@@ -259,6 +260,7 @@ a:active {
 }
 
 .inner-wrap-breadcrumb {
+    margin-bottom: 0;
     // padding: 0 @generalPadding;
     // background-color: @bgColor;
     // border-bottom: 2px solid #f5f5f5;
@@ -272,6 +274,24 @@ a:active {
     // display: inline;
     // float: left;
     // margin: 0;
+}
+
+.region-breadcrumb ul li {
+    margin: 0;
+}
+
+.region-breadcrumb ul li:first-child {
+    text-decoration: underline;
+}
+
+.region-breadcrumb ul li:nth-child(2),
+.selected {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.region-breadcrumb ul li:nth-child(2)::before {
+    content: " > ";
 }
 
 .next-previous {

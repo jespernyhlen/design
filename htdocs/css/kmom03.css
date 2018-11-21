@@ -4793,6 +4793,7 @@ figure {
 /* unvisited link */
 a:link {
   color: #2d0000;
+  text-decoration: none;
 }
 /* visited link */
 a:visited {
@@ -4950,6 +4951,9 @@ a:active {
   border-bottom: 1px solid #ccc;
   background-color: #eee;
 }
+.inner-wrap-breadcrumb {
+  margin-bottom: 0;
+}
 .region-breadcrumb {
   display: inline;
   float: left;
@@ -4957,6 +4961,20 @@ a:active {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   height: 72px;
+}
+.region-breadcrumb ul li {
+  margin: 0;
+}
+.region-breadcrumb ul li:first-child {
+  text-decoration: underline;
+}
+.region-breadcrumb ul li:nth-child(2),
+.selected {
+  font-style: italic;
+  font-weight: 600;
+}
+.region-breadcrumb ul li:nth-child(2)::before {
+  content: " > ";
 }
 .next-previous {
   margin-right: auto;
