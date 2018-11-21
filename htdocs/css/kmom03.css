@@ -4675,7 +4675,11 @@ body {
   margin: 0;
   padding: 0;
   color: #111;
-  background-color: #f7f7fa;
+  background-color: #fff;
+}
+ul {
+  padding: 0;
+  margin: 24px 0;
 }
 li {
   list-style: none;
@@ -4745,7 +4749,8 @@ figure {
 .inner-wrap {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1100px;
+  max-width: 960px;
+  margin-bottom: 24px;
 }
 .inner-wrap-main {
   background-color: #fff;
@@ -4754,9 +4759,9 @@ figure {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
   background-size: 100% auto;
 }
-@media (min-width: 1100px) {
+@media (min-width: 960px) {
   .vgrid .inner-wrap {
-    background-size: 1100px auto;
+    background-size: 960px auto;
   }
 }
 .vgrid .inner-wrap.inner-wrap-header,
@@ -4770,12 +4775,14 @@ figure {
     background-size: 100% auto;
   }
 }
+.right {
+  float: right;
+}
 .row {
   display: block;
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
-  margin-bottom: 12px;
 }
 .row::after {
   content: "";
@@ -4813,13 +4820,15 @@ a:active {
 .inner-wrap-header {
   margin-right: auto;
   margin-left: auto;
-  max-width: 100%;
+  max-width: 24;
+  margin-bottom: 0;
 }
 .inner-wrap-header a {
   text-decoration: none;
 }
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
+  padding: 1.4em 1em;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {
   transition: all 0.9s;
@@ -4842,7 +4851,17 @@ a:active {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   text-align: center;
-  background-color: #fff;
+}
+.region-header {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+}
+.region-header::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .site-logo-text a {
   display: block;
@@ -4856,20 +4875,27 @@ a:active {
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  padding: 24px 0;
+}
+.outer-wrap-flash {
+  background-color: #f7f7f7;
+  outline: 1px solid #ddd;
 }
 .inner-wrap-flash img {
-  -webkit-box-shadow: 0px 1px 4px 2px #706f65;
-  -moz-box-shadow: 0px 1px 4px 2px #706f65;
-  box-shadow: 0px 1px 4px 2px #706f65;
+  margin: 20px 0;
+  display: block;
+  -webkit-box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.5);
 }
 /********** MAIN *********/
 .region-main {
   display: inline;
   float: left;
-  width: 73.95833333%;
+  width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  margin-left: 13.02083333%;
+  margin-bottom: 24px;
 }
 .region-main.has-sidebar {
   margin-left: 0.52083333%;
@@ -4904,6 +4930,7 @@ a:active {
   width: 23.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  margin-bottom: 24px;
 }
 .region-sidebar-right {
   margin-left: 4.6875%;
@@ -4929,9 +4956,28 @@ a:active {
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  height: 72px;
+}
+.next-previous {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
 }
 .next {
+  display: inline;
+  float: left;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  float: right;
   text-align: right;
+}
+.previous {
+  display: inline;
+  float: left;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
 }
 /********** BYLINE *********/
 /********** FOOTER *********/
@@ -4939,8 +4985,7 @@ a:active {
   background-color: #424242;
 }
 .inner-wrap-footer {
-  border-left: 2px solid #383838;
-  border-right: 2px solid #383838;
+  padding-top: 24px;
 }
 .footer-column-wrapper {
   color: #ddd;

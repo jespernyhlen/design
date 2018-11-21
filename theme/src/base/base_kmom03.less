@@ -2,7 +2,7 @@
  * Base style to affect HTML elements on a general scale.
  */
 @bgColorHtml: #424242;
-@bgColorBody: #f7f7fa;
+@bgColorBody: #fff;
 @colorBody: #111;
 // @fontFamilyBody: sans-serif;
 
@@ -25,6 +25,11 @@ body {
     color: @colorBody;
     background-color: @bgColorBody;
     // font: 100.01%/1 @fontFamilyBody;
+}
+
+ul {
+    padding: 0;
+    margin: @magicNumber 0;
 }
 
 li {
