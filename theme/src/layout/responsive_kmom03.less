@@ -25,7 +25,7 @@
     .region-sidebar-right.has-sidebar-left {
         #desinax-vgrid.column(@columns);
     }
-    
+
      /********** NAVBAR *********/
 
      .region-header-col-1 {
@@ -46,6 +46,51 @@
     .region-sidebar-right {
         #desinax-vgrid.column(@columns);
         #desinax-vgrid.push(0);
+    }
+
+     /********** NAVBAR *********/
+
+    .rm-desktop {
+        display: none;
+    }
+
+    .rm-navbar-max {
+        display: inline;
+    }
+
+    .region-header-col-1,
+    .region-header-col-3 {
+        #desinax-vgrid.column(@columns * 1 / 2);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 1.75em;
+        padding-top: 0.375em;
+    }
+    
+    .region-main {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns - 2);
+            #desinax-vgrid.push(1);
+        }
+    }
+
+    .region-main.has-sidebar-left,
+    .region-main.has-sidebar-right,
+    .region-sidebar-left,
+    .region-sidebar-right,
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left  {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+    }
+
+    figure.right {
+        #desinax-vgrid.column(@columns);
     }
 
      /********** NAVBAR *********/

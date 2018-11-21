@@ -4576,6 +4576,9 @@ a:active {
   text-align: center;
   outline: 1px solid red;
 }
+figure.right {
+  margin-right: 0;
+}
 /********** MAIN *********/
 .region-main {
   display: inline;
@@ -5045,6 +5048,11 @@ fieldset {
   overflow-x: scroll;
 }
 fieldset select {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
   font-style: italic;
   font-weight: bold;
 }
@@ -5127,6 +5135,63 @@ figure {
     width: 98.95833333%;
     margin-right: 0.52083333%;
     margin-left: 0.52083333%;
+  }
+  /********** NAVBAR *********/
+  .rm-desktop {
+    display: none;
+  }
+  .rm-navbar-max {
+    display: inline;
+  }
+  .region-header-col-1,
+  .region-header-col-3 {
+    display: inline;
+    float: left;
+    width: 48.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+}
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.75em;
+    padding-top: 0.375em;
+  }
+  .region-main {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .region-main.has-sidebar-left.has-sidebar-right {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  .region-main.has-sidebar-left,
+  .region-main.has-sidebar-right,
+  .region-sidebar-left,
+  .region-sidebar-right,
+  .region-sidebar-left.has-sidebar-right,
+  .region-sidebar-right.has-sidebar-left {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+  }
+  figure.right {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   /********** NAVBAR *********/
   .rm-desktop {
