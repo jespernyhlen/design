@@ -251,18 +251,15 @@ figure.right img {
     content: " > ";
 }
 
-.next-previous {
-    #desinax-vgrid.grid(100%);
-}
-
 .next {
-    #desinax-vgrid.column(@columns * 1 / 2);
-    float: right;
+    #desinax-vgrid.column(12);
+    #desinax-vgrid.push(12);
     text-align: right;
 }
 
 .previous {
-    #desinax-vgrid.column(@columns * 1 / 2);
+    #desinax-vgrid.column(12);
+    #desinax-vgrid.pull(24);
 }
 
 /********** BYLINE *********/
