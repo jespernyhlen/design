@@ -50,6 +50,7 @@
 /* unvisited link */
 a:link {
     color: #2d0000;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -113,7 +114,7 @@ a:active {
 
 .region-header-col-2 .rm-navbar ul li a {
     text-decoration: none;
-    padding: 1.4em 1em;
+    padding: 1.4em 0.8em;
     background-color: #fff;
     border-bottom: 1px solid lightgray;
 }
@@ -310,6 +311,16 @@ figure.left {
     text-align: center;
 }
 
+.site-footer.block {
+    border-top: 1px solid #666;
+}
+
 .site-footer.block p {
-    margin-top: @magicNumber;
+    margin-top: @magicNumber * 2;
+}
+
+.footer-column a {
+    color: #ccc;
+    font-weight: bold;
+    font-style: italic;
 }

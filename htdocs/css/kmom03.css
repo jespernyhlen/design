@@ -4370,18 +4370,6 @@ template {
      * Enable all default typographic elements.
      */
 }
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
-}
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
 }
@@ -4474,6 +4462,7 @@ template {
 /* unvisited link */
 a:link {
   color: #2d0000;
+  font-weight: 600;
   text-decoration: none;
 }
 /* visited link */
@@ -4535,7 +4524,7 @@ a:active {
 }
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
-  padding: 1.4em 1em;
+  padding: 1.4em 0.8em;
   background-color: #fff;
   border-bottom: 1px solid lightgray;
 }
@@ -4744,8 +4733,16 @@ figure.left {
   color: #bbb;
   text-align: center;
 }
+.site-footer.block {
+  border-top: 1px solid #666;
+}
 .site-footer.block p {
-  margin-top: 24px;
+  margin-top: 48px;
+}
+.footer-column a {
+  color: #ccc;
+  font-weight: bold;
+  font-style: italic;
 }
 /**
  * Base style to affect HTML elements on a general scale.
