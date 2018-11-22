@@ -7,9 +7,10 @@
  * Variables
  */
 
-@generalBorder: 2px solid #ddd;
 @bgColor: #fff;
 @magicNumber:  24px;
+@maxWidth03: 960px;
+@generalBorder: lightgray;
 
 /**
  * General layout
@@ -18,7 +19,7 @@
 
 
 .inner-wrap {
-    #desinax-vgrid.grid(960px);
+    #desinax-vgrid.grid(@maxWidth03);
     margin-bottom: @magicNumber;
 }
 
@@ -29,7 +30,7 @@
 .vgrid .inner-wrap {
     @gridImage: "../img/grid_24x30x10-nomargin.png";
     //@gridImage: "../../img/grid_12x60x20-nomargin.png";
-    #desinax-vgrid.showGrid(@gridImage, 960px);
+    #desinax-vgrid.showGrid(@gridImage, @maxWidth03);
 
     &.inner-wrap-header,
     &.inner-wrap-footer {
@@ -82,7 +83,7 @@ a:active {
 
 #rm-menu-button {
     position: fixed;
-    top: 0px;
+    top: 12px;
     right: 4px;
     font-size: @magicNumber;
     padding-top: 0.4em;
@@ -93,7 +94,6 @@ a:active {
     max-width: 100%;
     background-color: #424242
 }
-
 
 .rm-show-submenu li a {
     background-color: #424242;
@@ -116,7 +116,7 @@ a:active {
     text-decoration: none;
     padding: 1.4em 0.8em;
     background-color: #fff;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid @generalBorder;
 }
 
 .region-header-col-2 .rm-navbar ul li a:hover {
@@ -150,7 +150,7 @@ a:active {
 
 .outer-wrap-flash {
     background-color: #f7f7f7;
-    outline: 1px solid lightgray;
+    outline: 1px solid @generalBorder;
 }
 
 .inner-wrap-flash img {

@@ -4489,7 +4489,7 @@ a:active {
 }
 #rm-menu-button {
   position: fixed;
-  top: 0px;
+  top: 12px;
   right: 4px;
   font-size: 24px;
   padding-top: 0.4em;
@@ -5165,6 +5165,9 @@ figcaption p {
   }
   .rm-navbar-max {
     display: inline;
+  }
+  .region-header {
+    padding-bottom: 24px;
   }
   .region-header-col-1,
   .region-header-col-3 {
