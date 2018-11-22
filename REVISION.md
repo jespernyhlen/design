@@ -1,6 +1,13 @@
 Revision history
 ======================
 
+v3.0.2 (2018-11-22)
+----------------------
+
+* Activated kmom03.min.css as standard stylesheet instead of wrong vgrid_kmom03.less.
+
+
+
 v3.0.1 (2018-11-22)
 ----------------------
 
