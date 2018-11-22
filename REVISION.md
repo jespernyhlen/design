@@ -1,6 +1,12 @@
 Revision history
 ======================
 
+v3.0.0 (2018-11-22)
+----------------------
+
+* Updated stylesheet for kmom03 base on vertical/horisontal gridlayout.
+
+
 
 v2.0.0 (2018-11-15)
 ----------------------
