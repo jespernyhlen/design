@@ -1,6 +1,13 @@
 Revision history
 ======================
 
+v3.1.0 (2018-11-22)
+----------------------
+
+* Updated navbar to perform better in responsive mode.
+
+
+
 v3.0.2 (2018-11-22)
 ----------------------
 
