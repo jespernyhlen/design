@@ -5241,7 +5241,10 @@ figcaption p {
     border-bottom: 1px solid lightgray;
   }
   .outer-wrap-flash {
+    background-color: #f7f7f7;
     padding-top: 72px;
+    outline: 1px solid #fff;
+    opacity: 1;
   }
   .style-page {
     padding-top: 72px;
@@ -5262,11 +5265,6 @@ figcaption p {
     width: 48.95833333%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
-  }
-  .outer-wrap-flash {
-    background-color: #eee;
-    outline: 1px solid #fff;
-    opacity: 1;
   }
 }
 @media screen and (max-width: 700px) {
