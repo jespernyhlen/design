@@ -4434,7 +4434,7 @@ template {
   margin-bottom: 24px;
 }
 .inner-wrap-main {
-  background-color: #444;
+  background-color: #2B6865;
 }
 .inner-wrap.inner-wrap-main {
   min-height: 432px;
@@ -4474,18 +4474,18 @@ template {
   clear: both;
 }
 code {
-  background-color: #222 !important;
+  background-color: #2B6865 !important;
 }
 /********* LINKS **********/
 /* unvisited link */
 a:link {
-  color: #eee;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
 }
 /* visited link */
 a:visited {
-  color: #eee;
+  color: #fff;
 }
 /* mouse over link */
 a:hover {
@@ -4493,7 +4493,7 @@ a:hover {
 }
 /* selected link */
 a:active {
-  color: #eee;
+  color: #fff;
 }
 /********** HEADER *********/
 /* Hide responsive/mobile menu */
@@ -4525,7 +4525,7 @@ a:active {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
-  background-color: #333;
+  background-color: #DB5E28;
 }
 .region-header::after {
   content: "";
@@ -4533,7 +4533,7 @@ a:active {
   clear: both;
 }
 .outer-wrap-header {
-  background-color: #333;
+  background-color: #DB5E28;
 }
 .inner-wrap-header {
   margin-right: auto;
@@ -4547,8 +4547,8 @@ a:active {
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
   padding: 1.4em 0.8em;
-  background-color: #333;
-  border-bottom: 1px solid #333;
+  background-color: #DB5E28;
+  border-bottom: 1px solid #DB5E28;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {
   transition: all 0.9s;
@@ -4589,9 +4589,9 @@ a:active {
   padding: 24px 0;
 }
 .outer-wrap-flash {
-  background-color: #fff;
-  outline: 1px solid lightgray;
-  opacity: 0.15;
+  background-color: #80BDB8;
+  outline: 1px solid #DB5E28;
+  opacity: 0.4;
 }
 .inner-wrap-flash img {
   margin: 20px 0;
@@ -4671,8 +4671,8 @@ figure.right img {
   margin-left: 4.6875%;
 }
 .wrap-sidebar .block h4 {
-  border: 1px solid #222;
-  background-color: #666;
+  border: 1px solid #2B6865;
+  background-color: #2B6865;
 }
 .inner-wrap-breadcrumb {
   margin-bottom: 0;
@@ -4735,7 +4735,7 @@ figure.left {
 }
 /********** FOOTER *********/
 .outer-wrap-footer {
-  background-color: #333;
+  background-color: #2B6865;
 }
 .inner-wrap-footer {
   padding-top: 24px;
@@ -5077,8 +5077,8 @@ body {
   font: 16px/1.5 Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #ddd;
-  background-color: #444;
+  color: #fff;
+  background-color: #2B6865;
 }
 h1 {
   font-weight: 500;
@@ -5193,7 +5193,7 @@ figcaption p {
 @media screen and (max-width: 800px) {
   /********** NAVBAR *********/
   .inner-wrap-header .row {
-    background-color: #333;
+    background-color: #fff;
     position: fixed;
     border-bottom: 1px solid lightgray;
   }
@@ -5222,7 +5222,7 @@ figcaption p {
   }
   .outer-wrap-flash {
     background-color: #eee;
-    outline: 1px solid lightgray;
+    outline: 1px solid #2B6865;
     opacity: 1;
   }
 }

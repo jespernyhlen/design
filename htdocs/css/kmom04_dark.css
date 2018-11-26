@@ -4590,7 +4590,7 @@ a:active {
 }
 .outer-wrap-flash {
   background-color: #fff;
-  outline: 1px solid lightgray;
+  outline: 1px solid #333;
   opacity: 0.15;
 }
 .inner-wrap-flash img {
