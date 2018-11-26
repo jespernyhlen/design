@@ -1,7 +1,7 @@
 /*!
- * LESS version of the stylesheet for design kmom04.
+ * LESS version of the stylesheet for design kmom04 Dark.
  *
- * This stylesheet is for the design course and kmom03.
+ * This stylesheet is for the design course and kmom04.
  *
  */
 
@@ -45,6 +45,7 @@
 @import "@desinax/typographic-grid/less/typography-font-families.less";
 @import "@desinax/typographic-grid/less/typography-defaults.less";
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
 // Show the grid
 .hgrid .inner-wrap {
     @gridImage: "../img/magic-number-@{magicNumber}.png";
@@ -57,7 +58,7 @@
  * Import the vertical grid.
  */
 @import "@desinax/vertical-grid/less/grid.less";
-@import "layout/layout_kmom04_dark.less";
+@import "layout/layout_kmom04.less";
 
 
 
@@ -105,9 +106,27 @@
 @fontFamilyBody:      @fontFamilyCalibri;
 @fontFamilyCode:      @fontFamilyCalibri;
 
-@bgColorBody: #444;
+
+@magicNumber: 24px;
+@maxWidth03: 960px;
+
+// Textcolor
 @colorBody: #ddd;
 @navLinkColor: #444;
 @linkColor: #eee;
 
+// Background colors
+
+@bgColorBody: #444;
+@bgColor: #444;
+@bgColorNav: #333;
+@sidebarHeadColor: #666;
+@bgColorCode: #222;
+@flashBgColor: #fff;
+@bgColorFooter: #333;
 @bgColorNavResponsive: #333;
+
+@generalBorder: lightgray;
+@sidebarHeadBorderColor: #222;
+
+@opacityFlash: 0.15;

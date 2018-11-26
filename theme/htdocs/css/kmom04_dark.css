@@ -1,7 +1,7 @@
 /*!
- * LESS version of the stylesheet for design kmom04.
+ * LESS version of the stylesheet for design kmom04 Dark.
  *
- * This stylesheet is for the design course and kmom03.
+ * This stylesheet is for the design course and kmom04.
  *
  */
 /**
@@ -4525,6 +4525,7 @@ a:active {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
+  background-color: #333;
 }
 .region-header::after {
   content: "";

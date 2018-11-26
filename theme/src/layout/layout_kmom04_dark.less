@@ -10,14 +10,20 @@
 @bgColor: #444;
 @magicNumber: 24px;
 @maxWidth03: 960px;
+
 @generalBorder: lightgray;
 @bgColorNav: #333;
 @linkColor: #eee;
+
 @sidebarHeadColor: #666;
 @sidebarHeadBorderColor: #222;
+
 @bgColorCode: #222;
 @flashBgColor: #fff;
 @bgColorFooter: #333;
+
+@opacityFlash: 0.15;
+
 
 
 /**
@@ -36,7 +42,6 @@
 }
 
 .inner-wrap {
-
     &.inner-wrap-main {
         min-height: @magicNumber * 18;
     }
@@ -120,6 +125,7 @@ a:active {
 
 .region-header {
     #desinax-vgrid.row();
+    background-color: @bgColorNav;
 }
 
 .outer-wrap-header {
@@ -178,7 +184,7 @@ a:active {
 .outer-wrap-flash {
     background-color: @flashBgColor;
     outline: 1px solid @generalBorder;
-    opacity: 0.15;
+    opacity: @opacityFlash;
 }
 
 .inner-wrap-flash img {
