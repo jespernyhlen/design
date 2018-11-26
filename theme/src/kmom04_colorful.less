@@ -1,0 +1,132 @@
+/*!
+ * LESS version of the stylesheet for design kmom04 Colorful.
+ *
+ * This stylesheet is for the design course and kmom04.
+ *
+ */
+
+/**
+* Import mixins.
+*/
+@import "mixin/clearfix.less";
+.clearfix() {
+    #design-mixin.clearfix();
+}
+
+
+
+/**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+//@import "module/kmom01.less";
+@import "module/stylechooser.less";  // Just an example module
+
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/layout_kmom04.less";
+
+
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import "base/base_kmom03.less";
+
+
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+//@import "layout/layout.less";
+//@import "layout/layout_kmom02.less";
+@import "layout/responsive_kmom04.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+//@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+ // Default grid, change to fit your requirements.
+ @columnWidth:   30;
+ @gutterWidth:   10;
+ @columns:       24;
+ @gridType:      "float"; // "flex"
+
+// Magic number and default fontsize, together makes up base lineheight
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+// Adapt the typographic grid to my style
+@fontFamilyHeadings:  'Raleway', sans-serif;  //@fontFamilyMyriadPro;
+@fontFamilyBody:      @fontFamilyCalibri;
+@fontFamilyCode:      @fontFamilyCalibri;
+
+
+@magicNumber: 24px;
+@maxWidth03: 960px;
+
+// Textcolor
+@colorBody: #ddd;
+@navLinkColor: #444;
+@linkColor: #eee;
+
+// Background colors
+
+@bgColorBody: #444;
+@bgColor: #444;
+@bgColorNav: #333;
+@sidebarHeadColor: #666;
+@bgColorCode: #222;
+@flashBgColor: #fff;
+@bgColorFooter: #333;
+@bgColorNavResponsive: #333;
+
+@generalBorder: lightgray;
+@sidebarHeadBorderColor: #222;
+
+@opacityFlash: 0.15;
