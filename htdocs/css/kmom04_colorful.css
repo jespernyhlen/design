@@ -4735,7 +4735,7 @@ figure.left {
 }
 /********** FOOTER *********/
 .outer-wrap-footer {
-  background-color: #2B6865;
+  background-color: #4D8A86;
 }
 .inner-wrap-footer {
   padding-top: 24px;
@@ -4783,6 +4783,42 @@ figure.left {
 /**
  * General layout
  */
+.outer-wrap-header {
+  box-shadow: 0 0 5px 2px #000;
+}
+.inner-wrap-main {
+  margin-top: 24px;
+}
+.outer-wrap-flash {
+  outline: 0;
+  box-shadow: 0 0 5px 1px #000;
+}
+.region-header-col-2 .rm-navbar ul li a:hover {
+  color: #000;
+  background-color: rgba(225, 122, 21, 0.6);
+}
+/******** FOOOTER *********/
+.outer-wrap-footer {
+  box-shadow: 0 0 2px 1px #000;
+}
+.footer-column-wrapper {
+  color: #000;
+}
+.footer-column h4 {
+  color: #000;
+  border-bottom: 0;
+}
+.footer-column a {
+  color: #000;
+}
+.site-footer.block {
+  color: #000;
+  border-top: 1px solid #000;
+}
+.site-footer.block p {
+  color: #DB5E28;
+  text-shadow: 1px 1px #000;
+}
 /**
  * Base style to affect HTML elements on a general scale.
  */
@@ -5229,7 +5265,7 @@ figcaption p {
   }
   .outer-wrap-flash {
     background-color: #eee;
-    outline: 1px solid #2B6865;
+    outline: 1px solid #fff;
     opacity: 1;
   }
 }
@@ -5536,3 +5572,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * My own settings, not currently in their own module.
  */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  border-bottom: 0;
+}
