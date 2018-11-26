@@ -4474,7 +4474,7 @@ template {
   clear: both;
 }
 code {
-  background-color: #2B6865 !important;
+  background-color: rgba(219, 94, 40, 0.4) !important;
 }
 /********* LINKS **********/
 /* unvisited link */
@@ -4671,8 +4671,8 @@ figure.right img {
   margin-left: 4.6875%;
 }
 .wrap-sidebar .block h4 {
-  border: 1px solid #2B6865;
-  background-color: #2B6865;
+  border: 1px solid #21504E;
+  background-color: rgba(219, 94, 40, 0.6);
 }
 .inner-wrap-breadcrumb {
   margin-bottom: 0;
@@ -4814,10 +4814,6 @@ figure.left {
 .site-footer.block {
   color: #000;
   border-top: 1px solid #000;
-}
-.site-footer.block p {
-  color: #DB5E28;
-  text-shadow: 1px 1px #000;
 }
 /**
  * Base style to affect HTML elements on a general scale.
