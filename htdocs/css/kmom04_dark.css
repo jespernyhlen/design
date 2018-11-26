@@ -1,5 +1,5 @@
 /*!
- * LESS version of the stylesheet for design kmom03.
+ * LESS version of the stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom03.
  *
@@ -4543,21 +4543,6 @@ a:active {
 .inner-wrap-header a {
   text-decoration: none;
 }
-.region-header-col-1 {
-  display: inline;
-  float: left;
-  width: 23.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.region-header-col-2 {
-  display: inline;
-  float: left;
-  width: 73.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  text-align: right;
-}
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
   padding: 1.4em 0.8em;
@@ -4572,6 +4557,21 @@ a:active {
 }
 .region-header-col-2 .rm-navbar ul li ul {
   text-align: center;
+}
+.region-header-col-1 {
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.region-header-col-2 {
+  display: inline;
+  float: left;
+  width: 73.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  text-align: right;
 }
 .site-logo-text a {
   display: block;
@@ -5192,7 +5192,7 @@ figcaption p {
 @media screen and (max-width: 800px) {
   /********** NAVBAR *********/
   .inner-wrap-header .row {
-    background-color: #fff;
+    background-color: #333;
     position: fixed;
     border-bottom: 1px solid lightgray;
   }
@@ -5218,6 +5218,11 @@ figcaption p {
     width: 48.95833333%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
+  }
+  .outer-wrap-flash {
+    background-color: #eee;
+    outline: 1px solid lightgray;
+    opacity: 1;
   }
 }
 @media screen and (max-width: 700px) {

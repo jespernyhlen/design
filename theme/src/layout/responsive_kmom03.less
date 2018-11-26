@@ -1,6 +1,8 @@
 /**
  * Layout for responsive style through media queries.
  */
+@bgColorNavResponsive: #fff;
+
  /********** RESPONSIVE 1, 2, 3 *********/
 
 @media screen and (max-width: 900px) {
@@ -55,7 +57,7 @@
 
     /********** NAVBAR *********/
     .inner-wrap-header .row {
-        background-color: #fff;
+        background-color: @bgColorNavResponsive;
         position: fixed;
         border-bottom: 1px solid lightgray;
     }
