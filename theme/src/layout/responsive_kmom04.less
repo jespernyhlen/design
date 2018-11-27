@@ -90,6 +90,17 @@
     .region-header-col-3 {
         #desinax-vgrid.column(@columns * 1 / 2);
     }
+
+    .outer-wrap-flash-message {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+        font-weight: normal;
+        margin-top: @magicNumber * 4;
+    }
+
+    .inner-wrap-main {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 700px) {

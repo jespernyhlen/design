@@ -5223,6 +5223,19 @@ figcaption p {
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
+  .outer-wrap-flash-message {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+    margin-left: 4.6875%;
+    font-weight: normal;
+    margin-top: 96px;
+  }
+  .inner-wrap-main {
+    margin-top: 0;
+  }
 }
 @media screen and (max-width: 700px) {
   h1 {
