@@ -4474,18 +4474,18 @@ template {
   clear: both;
 }
 code {
-  background-color: lightgray !important;
+  background-color: #EFF6E5 !important;
 }
 /********* LINKS **********/
 /* unvisited link */
 a:link {
-  color: #222;
+  color: #1F2A0E;
   font-weight: 600;
   text-decoration: none;
 }
 /* visited link */
 a:visited {
-  color: #222;
+  color: #1F2A0E;
 }
 /* mouse over link */
 a:hover {
@@ -4493,7 +4493,7 @@ a:hover {
 }
 /* selected link */
 a:active {
-  color: #222;
+  color: #1F2A0E;
 }
 /********** HEADER *********/
 /* Hide responsive/mobile menu */
@@ -4525,7 +4525,7 @@ a:active {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
-  background-color: #ddd;
+  background-color: #fff;
 }
 .region-header::after {
   content: "";
@@ -4533,7 +4533,7 @@ a:active {
   clear: both;
 }
 .outer-wrap-header {
-  background-color: #ddd;
+  background-color: #fff;
 }
 .inner-wrap-header {
   margin-right: auto;
@@ -4547,8 +4547,8 @@ a:active {
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
   padding: 1.4em 0.8em;
-  background-color: #ddd;
-  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {
   transition: all 0.9s;
@@ -4589,9 +4589,9 @@ a:active {
   padding: 24px 0;
 }
 .outer-wrap-flash {
-  background-color: #f8f8f8;
-  outline: 1px solid #ddd;
-  opacity: 1;
+  background-color: #fff;
+  outline: 1px solid #fff;
+  opacity: 0.7;
 }
 .inner-wrap-flash img {
   margin: 20px 0;
@@ -4671,8 +4671,8 @@ figure.right img {
   margin-left: 4.6875%;
 }
 .wrap-sidebar .block h4 {
-  border: 1px solid gray;
-  background-color: lightgray;
+  border: 1px solid #DEEBC6;
+  background-color: #EBF3DD;
 }
 .inner-wrap-breadcrumb {
   margin-bottom: 0;
@@ -4735,7 +4735,7 @@ figure.left {
 }
 /********** FOOTER *********/
 .outer-wrap-footer {
-  background-color: #333;
+  background-color: #F4F8EC;
 }
 .inner-wrap-footer {
   padding-top: 24px;
@@ -4783,6 +4783,49 @@ figure.left {
 /**
  * General layout
  */
+.region-header-col-2 .rm-navbar ul li a {
+  color: #9CC559;
+}
+.inner-wrap-flash img {
+  border-radius: 20px;
+  box-shadow: 0 0 20px 1px #eee;
+}
+.author-byline {
+  border-top: 1px solid #91BF45;
+}
+/******** FOOOTER *********/
+.outer-wrap-footer {
+  border-top: 2px solid #91BF45;
+}
+.footer-column-wrapper {
+  color: #000;
+}
+.footer-column h4 {
+  color: #91BF45;
+  font-weight: bold;
+  border-bottom: 0;
+}
+.footer-column a {
+  color: #000;
+}
+.site-footer.block {
+  color: #000;
+  border-top: 1px solid #91BF45;
+}
+/******** RESPONSIVE *******/
+#rm-menu {
+  background-color: #EBF3DD;
+  color: #000;
+}
+.rm-max .rm-mobile .rm-submenu-button {
+  color: #9fb129;
+}
+.rm-max .rm-mobile li ul li {
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
+}
+.rm-show-submenu li a {
+  background-color: #EBF3DD;
+}
 /**
  * Base style to affect HTML elements on a general scale.
  */
@@ -5084,7 +5127,7 @@ body {
   font: 16px/1.5 Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #111;
+  color: #000;
   background-color: #fff;
 }
 h1 {
@@ -5205,9 +5248,9 @@ figcaption p {
     border-bottom: 1px solid lightgray;
   }
   .outer-wrap-flash {
-    background-color: #f7f7f7;
+    background-color: #fff;
     padding-top: 72px;
-    outline: 1px solid #ddd;
+    outline: 1px solid #fff;
     opacity: 1;
   }
   .style-page {
@@ -5547,3 +5590,11 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * My own settings, not currently in their own module.
  */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  border-bottom: 0;
+  color: #91BF45;
+}
