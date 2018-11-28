@@ -38,5 +38,10 @@ return [
             "url" => "test",
             "title" => "En sida byggd för test.",
         ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapporter indom design.",
+        ],
     ],
 ];
