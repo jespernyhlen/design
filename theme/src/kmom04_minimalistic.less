@@ -44,7 +44,7 @@
  */
 @import "@desinax/typographic-grid/less/typography-font-families.less";
 @import "@desinax/typographic-grid/less/typography-defaults.less";
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto');
 
 // Show the grid
 .hgrid .inner-wrap {
@@ -103,8 +103,8 @@
 @fontSizeBody: 16px;
 
 // Adapt the typographic grid to my style
-@fontFamilyHeadings:  'Raleway', sans-serif;  //@fontFamilyMyriadPro;
-@fontFamilyBody:      @fontFamilyCalibri;
+@fontFamilyHeadings:  'Lato', sans-serif;  //@fontFamilyMyriadPro;
+@fontFamilyBody:      'Roboto', sans-serif;
 @fontFamilyCode:      @fontFamilyCalibri;
 
 
@@ -113,27 +113,34 @@
 
 // // Textcolor
 @colorBody: #000;
-@navLinkColor: #9CC559;
+@navLinkColor: #5B7A2A;
 @linkColor: #1F2A0E;
 //
 // // Background colors
 //
 @bgColorBody: #fff;
 @bgColor: #fff;
-@bgColorNav: #fff;
-@sidebarHeadColor: #EBF3DD;
+@bgColorNav: #F3F7F3;
+@sidebarHeadColor: #F3F7F3;
 @bgColorCode: #EFF6E5;
-@flashBgColor: #fff;
-@bgColorFooter: #F4F8EC;
+@flashBgColor: #F3F7F3;
+@bgColorFooter: #F3F7F3;
 @bgColorNavResponsive: #fff;
 @bgColorFlashResponsive: #fff;
 //
 @generalBorder: #fff;
 @sidebarHeadBorderColor: #DEEBC6;
 //
-@opacityFlash: 0.7;
+@opacityFlash: 1;
 //
-h1, h2, h3, h4, h5 {
+h1, h2 {
     border-bottom: 0;
-    color: #91BF45;
+    font-weight: 300;
+    color: #567B23;
+}
+
+h3, h4, h5, h6 {
+    border-bottom: 0;
+    font-weight: normal;
+    color: #567B23;
 }

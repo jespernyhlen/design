@@ -4371,16 +4371,28 @@ template {
      */
 }
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Lato';
   font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Lato';
   font-style: normal;
-  font-weight: 500;
-  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
@@ -4525,7 +4537,7 @@ a:active {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
-  background-color: #fff;
+  background-color: #F3F7F3;
 }
 .region-header::after {
   content: "";
@@ -4533,7 +4545,7 @@ a:active {
   clear: both;
 }
 .outer-wrap-header {
-  background-color: #fff;
+  background-color: #F3F7F3;
 }
 .inner-wrap-header {
   margin-right: auto;
@@ -4547,8 +4559,8 @@ a:active {
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
   padding: 1.4em 0.8em;
-  background-color: #fff;
-  border-bottom: 1px solid #fff;
+  background-color: #F3F7F3;
+  border-bottom: 1px solid #F3F7F3;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {
   transition: all 0.9s;
@@ -4589,9 +4601,9 @@ a:active {
   padding: 24px 0;
 }
 .outer-wrap-flash {
-  background-color: #fff;
-  outline: 1px solid #fff;
-  opacity: 0.7;
+  background-color: #F3F7F3;
+  outline: 1px solid #F3F7F3;
+  opacity: 1;
 }
 .inner-wrap-flash img {
   margin: 20px 0;
@@ -4672,7 +4684,7 @@ figure.right img {
 }
 .wrap-sidebar .block h4 {
   border: 1px solid #DEEBC6;
-  background-color: #EBF3DD;
+  background-color: #F3F7F3;
 }
 .inner-wrap-breadcrumb {
   margin-bottom: 0;
@@ -4735,7 +4747,7 @@ figure.left {
 }
 /********** FOOTER *********/
 .outer-wrap-footer {
-  background-color: #F4F8EC;
+  background-color: #F3F7F3;
 }
 .inner-wrap-footer {
   padding-top: 24px;
@@ -4783,25 +4795,33 @@ figure.left {
 /**
  * General layout
  */
+.rm-navbar {
+  font-family: sans-serif;
+}
 .region-header-col-2 .rm-navbar ul li a {
-  color: #9CC559;
+  color: #5B7A2A;
+  font-weight: normal;
 }
 .inner-wrap-flash img {
   border-radius: 20px;
   box-shadow: 0 0 20px 1px #eee;
+  opacity: 0.6;
+}
+.outer-wrap-flash {
+  border-bottom: 1px solid #eee;
 }
 .author-byline {
-  border-top: 1px solid #91BF45;
+  border-top: 1px solid #567B23;
 }
 /******** FOOOTER *********/
 .outer-wrap-footer {
-  border-top: 2px solid #91BF45;
+  border-top: 1px solid #eee;
 }
 .footer-column-wrapper {
   color: #000;
 }
 .footer-column h4 {
-  color: #91BF45;
+  color: #567B23;
   font-weight: bold;
   border-bottom: 0;
 }
@@ -4810,7 +4830,7 @@ figure.left {
 }
 .site-footer.block {
   color: #000;
-  border-top: 1px solid #91BF45;
+  border-top: 1px solid #567B23;
 }
 /******** RESPONSIVE *******/
 #rm-menu {
@@ -4838,7 +4858,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5124,7 +5144,7 @@ html {
   background-color: #424242;
 }
 body {
-  font: 16px/1.5 Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.5 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   color: #000;
@@ -5591,10 +5611,16 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * My own settings, not currently in their own module.
  */
 h1,
-h2,
+h2 {
+  border-bottom: 0;
+  font-weight: 300;
+  color: #567B23;
+}
 h3,
 h4,
-h5 {
+h5,
+h6 {
   border-bottom: 0;
-  color: #91BF45;
+  font-weight: normal;
+  color: #567B23;
 }
