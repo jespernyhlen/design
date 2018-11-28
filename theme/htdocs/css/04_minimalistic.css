@@ -5,6 +5,15 @@
  *
  */
 /**
+* Imports.
+*/
+/*!
+ * LESS version of the stylesheet for design kmom04.
+ *
+ * This stylesheet is for the design course and kmom04.
+ *
+ */
+/**
 * Import mixins.
 */
 /**
@@ -4323,18 +4332,6 @@ template {
   font-family: 'Font Awesome 5 Brands';
 }
 /**
- * Internal self contained modules, save in directory module/.
- */
-/**
- * Style for the stylechooser.
- */
-/**
- * Variables
- */
-/**
- * Style
- */
-/**
  * Import the typographic grid.
  */
 /**
@@ -4371,28 +4368,16 @@ template {
      */
 }
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Raleway';
   font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  font-weight: 500;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
 }
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
@@ -4430,84 +4415,14 @@ template {
      */
 }
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
+ * Style for the header.
  */
 /**
  * Variables
  */
 /**
- * General layout
+ * Style
  */
-.inner-wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 960px;
-  margin-bottom: 24px;
-}
-.inner-wrap-main {
-  background-color: #fff;
-}
-.inner-wrap.inner-wrap-main {
-  min-height: 432px;
-}
-.vgrid .inner-wrap {
-  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
-  background-size: 100% auto;
-}
-@media (min-width: 960px) {
-  .vgrid .inner-wrap {
-    background-size: 960px auto;
-  }
-}
-.vgrid .inner-wrap.inner-wrap-header,
-.vgrid .inner-wrap.inner-wrap-footer {
-  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
-  background-size: 100% auto;
-}
-@media (min-width: 100%) {
-  .vgrid .inner-wrap.inner-wrap-header,
-  .vgrid .inner-wrap.inner-wrap-footer {
-    background-size: 100% auto;
-  }
-}
-.right {
-  float: right;
-}
-.row {
-  display: block;
-  width: 101.04166667%;
-  margin-left: -0.52083333%;
-  margin-right: -0.52083333%;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-code {
-  background-color: #EFF6E5 !important;
-}
-/********* LINKS **********/
-/* unvisited link */
-a:link {
-  color: #1F2A0E;
-  font-weight: 600;
-  text-decoration: none;
-}
-/* visited link */
-a:visited {
-  color: #1F2A0E;
-}
-/* mouse over link */
-a:hover {
-  color: #a57f7f;
-}
-/* selected link */
-a:active {
-  color: #1F2A0E;
-}
-/********** HEADER *********/
 /* Hide responsive/mobile menu */
 .rm-navbar-max {
   display: none;
@@ -4609,21 +4524,15 @@ a:active {
   margin: 20px 0;
   display: block;
 }
-.region-flash-message {
-  margin-top: 12px;
-  background-color: rgba(105, 156, 23, 0.1);
-}
-.flashmessage {
-  font-weight: bold;
-  text-align: center;
-  outline: 1px solid rgba(105, 156, 23);
-}
-figure.right {
-  margin-right: 0;
-}
-figure.right img {
-  max-height: 18em;
-}
+/**
+ * Style for the main.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
 /********** MAIN *********/
 .region-main {
   display: inline;
@@ -4732,7 +4641,15 @@ figure.right img {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
-/********** BYLINE *********/
+/**
+ * Style for the byline.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
 .author-byline {
   border-top: 1px solid #ccc;
   margin-top: 48px;
@@ -4745,7 +4662,15 @@ figure.left {
 .author-byline p {
   margin-top: 24px;
 }
-/********** FOOTER *********/
+/**
+ * Style for the main.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
 .outer-wrap-footer {
   background-color: #F3F7F3;
 }
@@ -4789,62 +4714,96 @@ figure.left {
   font-style: italic;
 }
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
+ * Style for the byline.
  */
 /**
- * General layout
+ * Variables
  */
-.rm-navbar {
-  font-family: sans-serif;
+/**
+ * Style
+ */
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
 }
-.region-header-col-2 .rm-navbar ul li a {
-  color: #5B7A2A;
-  font-weight: normal;
+.inner-wrap-main {
+  background-color: #fff;
 }
-.inner-wrap-flash img {
-  border-radius: 20px;
-  box-shadow: 0 0 20px 1px #eee;
-  opacity: 0.6;
+.inner-wrap.inner-wrap-main {
+  min-height: 432px;
 }
-.outer-wrap-flash {
-  border-bottom: 1px solid #eee;
+.vgrid .inner-wrap {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
 }
-.author-byline {
-  border-top: 1px solid #567B23;
+@media (min-width: 960px) {
+  .vgrid .inner-wrap {
+    background-size: 960px auto;
+  }
 }
-/******** FOOOTER *********/
-.outer-wrap-footer {
-  border-top: 1px solid #eee;
+.vgrid .inner-wrap.inner-wrap-header,
+.vgrid .inner-wrap.inner-wrap-footer {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
 }
-.footer-column-wrapper {
-  color: #000;
+@media (min-width: 100%) {
+  .vgrid .inner-wrap.inner-wrap-header,
+  .vgrid .inner-wrap.inner-wrap-footer {
+    background-size: 100% auto;
+  }
 }
-.footer-column h4 {
-  color: #567B23;
+.right {
+  float: right;
+}
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+code {
+  background-color: #EFF6E5 !important;
+}
+/********* LINKS **********/
+/* unvisited link */
+a:link {
+  color: #1F2A0E;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: #1F2A0E;
+}
+/* mouse over link */
+a:hover {
+  color: #a57f7f;
+}
+/* selected link */
+a:active {
+  color: #1F2A0E;
+}
+/**************************/
+.region-flash-message {
+  margin-top: 12px;
+  background-color: rgba(105, 156, 23, 0.1);
+}
+.flashmessage {
   font-weight: bold;
-  border-bottom: 0;
+  text-align: center;
+  outline: 1px solid rgba(105, 156, 23);
 }
-.footer-column a {
-  color: #000;
+figure.right {
+  margin-right: 0;
 }
-.site-footer.block {
-  color: #000;
-  border-top: 1px solid #567B23;
-}
-/******** RESPONSIVE *******/
-#rm-menu {
-  background-color: #EBF3DD;
-  color: #000;
-}
-.rm-max .rm-mobile .rm-submenu-button {
-  color: #9fb129;
-}
-.rm-max .rm-mobile li ul li {
-  box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
-}
-.rm-show-submenu li a {
-  background-color: #EBF3DD;
+figure.right img {
+  max-height: 18em;
 }
 /**
  * Base style to affect HTML elements on a general scale.
@@ -5352,37 +5311,6 @@ figcaption p {
   }
 }
 /**
- * Show off the regions used in the website, to ease styling.
- */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
-}
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
-}
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
-}
-/**
  * A responsive menu.
  */
 /**
@@ -5609,6 +5537,90 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-max.rm-swipe-right .rm-mobile {
   right: 0;
+}
+/**
+ * My own settings, not currently in their own module.
+ */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * General layout
+ */
+.rm-navbar {
+  font-family: sans-serif;
+}
+.region-header-col-2 .rm-navbar ul li a {
+  color: #5B7A2A;
+  font-weight: normal;
+}
+.inner-wrap-flash img {
+  border-radius: 20px;
+  box-shadow: 0 0 20px 1px #eee;
+}
+.outer-wrap-flash {
+  border-bottom: 1px solid #eee;
+}
+.author-byline {
+  border-top: 1px solid #567B23;
+}
+/******** FOOOTER *********/
+.outer-wrap-footer {
+  border-top: 1px solid #eee;
+}
+.footer-column-wrapper {
+  color: #000;
+}
+.footer-column h4 {
+  color: #567B23;
+  font-weight: bold;
+  border-bottom: 0;
+}
+.footer-column a {
+  color: #000;
+}
+.site-footer.block {
+  color: #000;
+  border-top: 1px solid #567B23;
+}
+/******** RESPONSIVE *******/
+#rm-menu {
+  background-color: #EBF3DD;
+  color: #000;
+}
+.rm-max .rm-mobile .rm-submenu-button {
+  color: #9fb129;
+}
+.rm-max .rm-mobile li ul li {
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
+}
+.rm-show-submenu li a {
+  background-color: #EBF3DD;
 }
 /**
  * My own settings, not currently in their own module.

@@ -4323,18 +4323,6 @@ template {
   font-family: 'Font Awesome 5 Brands';
 }
 /**
- * Internal self contained modules, save in directory module/.
- */
-/**
- * Style for the stylechooser.
- */
-/**
- * Variables
- */
-/**
- * Style
- */
-/**
  * Import the typographic grid.
  */
 /**
@@ -4418,84 +4406,14 @@ template {
      */
 }
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
+ * Style for the header.
  */
 /**
  * Variables
  */
 /**
- * General layout
+ * Style
  */
-.inner-wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 960px;
-  margin-bottom: 24px;
-}
-.inner-wrap-main {
-  background-color: #fff;
-}
-.inner-wrap.inner-wrap-main {
-  min-height: 432px;
-}
-.vgrid .inner-wrap {
-  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
-  background-size: 100% auto;
-}
-@media (min-width: 960px) {
-  .vgrid .inner-wrap {
-    background-size: 960px auto;
-  }
-}
-.vgrid .inner-wrap.inner-wrap-header,
-.vgrid .inner-wrap.inner-wrap-footer {
-  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
-  background-size: 100% auto;
-}
-@media (min-width: 100%) {
-  .vgrid .inner-wrap.inner-wrap-header,
-  .vgrid .inner-wrap.inner-wrap-footer {
-    background-size: 100% auto;
-  }
-}
-.right {
-  float: right;
-}
-.row {
-  display: block;
-  width: 101.04166667%;
-  margin-left: -0.52083333%;
-  margin-right: -0.52083333%;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-code {
-  background-color: lightgray !important;
-}
-/********* LINKS **********/
-/* unvisited link */
-a:link {
-  color: #222;
-  font-weight: 600;
-  text-decoration: none;
-}
-/* visited link */
-a:visited {
-  color: #222;
-}
-/* mouse over link */
-a:hover {
-  color: #a57f7f;
-}
-/* selected link */
-a:active {
-  color: #222;
-}
-/********** HEADER *********/
 /* Hide responsive/mobile menu */
 .rm-navbar-max {
   display: none;
@@ -4597,21 +4515,15 @@ a:active {
   margin: 20px 0;
   display: block;
 }
-.region-flash-message {
-  margin-top: 12px;
-  background-color: rgba(105, 156, 23, 0.1);
-}
-.flashmessage {
-  font-weight: bold;
-  text-align: center;
-  outline: 1px solid rgba(105, 156, 23);
-}
-figure.right {
-  margin-right: 0;
-}
-figure.right img {
-  max-height: 18em;
-}
+/**
+ * Style for the main.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
 /********** MAIN *********/
 .region-main {
   display: inline;
@@ -4720,7 +4632,15 @@ figure.right img {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
-/********** BYLINE *********/
+/**
+ * Style for the byline.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
 .author-byline {
   border-top: 1px solid #ccc;
   margin-top: 48px;
@@ -4733,7 +4653,15 @@ figure.left {
 .author-byline p {
   margin-top: 24px;
 }
-/********** FOOTER *********/
+/**
+ * Style for the main.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
 .outer-wrap-footer {
   background-color: #333;
 }
@@ -4775,6 +4703,98 @@ figure.left {
   color: #ccc;
   font-weight: bold;
   font-style: italic;
+}
+/**
+ * Style for the byline.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
+.inner-wrap-main {
+  background-color: #fff;
+}
+.inner-wrap.inner-wrap-main {
+  min-height: 432px;
+}
+.vgrid .inner-wrap {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 960px) {
+  .vgrid .inner-wrap {
+    background-size: 960px auto;
+  }
+}
+.vgrid .inner-wrap.inner-wrap-header,
+.vgrid .inner-wrap.inner-wrap-footer {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 100%) {
+  .vgrid .inner-wrap.inner-wrap-header,
+  .vgrid .inner-wrap.inner-wrap-footer {
+    background-size: 100% auto;
+  }
+}
+.right {
+  float: right;
+}
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+code {
+  background-color: lightgray !important;
+}
+/********* LINKS **********/
+/* unvisited link */
+a:link {
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: #222;
+}
+/* mouse over link */
+a:hover {
+  color: #a57f7f;
+}
+/* selected link */
+a:active {
+  color: #222;
+}
+/**************************/
+.region-flash-message {
+  margin-top: 12px;
+  background-color: rgba(105, 156, 23, 0.1);
+}
+.flashmessage {
+  font-weight: bold;
+  text-align: center;
+  outline: 1px solid rgba(105, 156, 23);
+}
+figure.right {
+  margin-right: 0;
+}
+figure.right img {
+  max-height: 18em;
 }
 /**
  * Base style to affect HTML elements on a general scale.
@@ -5280,37 +5300,6 @@ figcaption p {
   .footer-column:nth-child(3) {
     margin-left: 4.6875%;
   }
-}
-/**
- * Show off the regions used in the website, to ease styling.
- */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
-}
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
-}
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
 }
 /**
  * A responsive menu.

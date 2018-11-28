@@ -32,14 +32,6 @@
 
 
 /**
- * Internal self contained modules, save in directory module/.
- */
-//@import "module/kmom01.less";
-@import "module/stylechooser.less";  // Just an example module
-
-
-
-/**
  * Import the typographic grid.
  */
 @import "@desinax/typographic-grid/less/typography-font-families.less";
@@ -57,7 +49,13 @@
  * Import the vertical grid.
  */
 @import "@desinax/vertical-grid/less/grid.less";
-@import "layout/layout_kmom04.less";
+
+@import "module/header.less";
+@import "module/main.less";
+@import "module/byline.less";
+@import "module/footer.less";
+@import "module/general.less";
+
 
 
 
@@ -72,11 +70,7 @@
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
-//@import "layout/layout.less";
-//@import "layout/layout_kmom02.less";
 @import "layout/responsive_kmom04.less";
-@import "layout/regions.less";     // To add style for ?regions
-
 
 
 /**

@@ -5,6 +5,33 @@
  *
  */
 /**
+ * Imports.
+ */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jO.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnZKveRhf_.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+/*!
+ * LESS version of the stylesheet for design kmom04.
+ *
+ * This stylesheet is for the design course and kmom04.
+ *
+ */
+/**
 * Import mixins.
 */
 /**
@@ -4323,18 +4350,6 @@ template {
   font-family: 'Font Awesome 5 Brands';
 }
 /**
- * Internal self contained modules, save in directory module/.
- */
-/**
- * Style for the stylechooser.
- */
-/**
- * Variables
- */
-/**
- * Style
- */
-/**
  * Import the typographic grid.
  */
 /**
@@ -4371,22 +4386,16 @@ template {
      */
 }
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jO.ttf) format('truetype');
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: 'Raleway';
   font-style: normal;
-  font-weight: 700;
-  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnLK3eRhf_.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  font-weight: 500;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
 }
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
@@ -4424,84 +4433,14 @@ template {
      */
 }
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
+ * Style for the header.
  */
 /**
  * Variables
  */
 /**
- * General layout
+ * Style
  */
-.inner-wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 960px;
-  margin-bottom: 24px;
-}
-.inner-wrap-main {
-  background-color: #2B6865;
-}
-.inner-wrap.inner-wrap-main {
-  min-height: 432px;
-}
-.vgrid .inner-wrap {
-  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
-  background-size: 100% auto;
-}
-@media (min-width: 960px) {
-  .vgrid .inner-wrap {
-    background-size: 960px auto;
-  }
-}
-.vgrid .inner-wrap.inner-wrap-header,
-.vgrid .inner-wrap.inner-wrap-footer {
-  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
-  background-size: 100% auto;
-}
-@media (min-width: 100%) {
-  .vgrid .inner-wrap.inner-wrap-header,
-  .vgrid .inner-wrap.inner-wrap-footer {
-    background-size: 100% auto;
-  }
-}
-.right {
-  float: right;
-}
-.row {
-  display: block;
-  width: 101.04166667%;
-  margin-left: -0.52083333%;
-  margin-right: -0.52083333%;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-code {
-  background-color: rgba(219, 94, 40, 0.4) !important;
-}
-/********* LINKS **********/
-/* unvisited link */
-a:link {
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-}
-/* visited link */
-a:visited {
-  color: #fff;
-}
-/* mouse over link */
-a:hover {
-  color: #a57f7f;
-}
-/* selected link */
-a:active {
-  color: #fff;
-}
-/********** HEADER *********/
 /* Hide responsive/mobile menu */
 .rm-navbar-max {
   display: none;
@@ -4603,21 +4542,15 @@ a:active {
   margin: 20px 0;
   display: block;
 }
-.region-flash-message {
-  margin-top: 12px;
-  background-color: rgba(105, 156, 23, 0.1);
-}
-.flashmessage {
-  font-weight: bold;
-  text-align: center;
-  outline: 1px solid rgba(105, 156, 23);
-}
-figure.right {
-  margin-right: 0;
-}
-figure.right img {
-  max-height: 18em;
-}
+/**
+ * Style for the main.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
 /********** MAIN *********/
 .region-main {
   display: inline;
@@ -4726,7 +4659,15 @@ figure.right img {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
-/********** BYLINE *********/
+/**
+ * Style for the byline.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
 .author-byline {
   border-top: 1px solid #ccc;
   margin-top: 48px;
@@ -4739,7 +4680,15 @@ figure.left {
 .author-byline p {
   margin-top: 24px;
 }
-/********** FOOTER *********/
+/**
+ * Style for the main.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
 .outer-wrap-footer {
   background-color: #4D8A86;
 }
@@ -4783,45 +4732,96 @@ figure.left {
   font-style: italic;
 }
 /**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
+ * Style for the byline.
  */
 /**
- * General layout
+ * Variables
  */
-.outer-wrap-header {
-  box-shadow: 0 0 5px 2px #000;
+/**
+ * Style
+ */
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
 }
 .inner-wrap-main {
-  margin-top: 24px;
+  background-color: #2B6865;
 }
-.outer-wrap-flash {
-  outline: 0;
-  box-shadow: 0 0 5px 1px #000;
+.inner-wrap.inner-wrap-main {
+  min-height: 432px;
 }
-.region-header-col-2 .rm-navbar ul li a:hover {
-  color: #000;
-  background-color: rgba(225, 122, 21, 0.6);
+.vgrid .inner-wrap {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
 }
-/******** FOOOTER *********/
-.outer-wrap-footer {
-  box-shadow: 0 0 2px 1px #000;
+@media (min-width: 960px) {
+  .vgrid .inner-wrap {
+    background-size: 960px auto;
+  }
 }
-.footer-column-wrapper {
-  color: #000;
+.vgrid .inner-wrap.inner-wrap-header,
+.vgrid .inner-wrap.inner-wrap-footer {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
 }
-.footer-column h4 {
-  color: #db5e28;
+@media (min-width: 100%) {
+  .vgrid .inner-wrap.inner-wrap-header,
+  .vgrid .inner-wrap.inner-wrap-footer {
+    background-size: 100% auto;
+  }
+}
+.right {
+  float: right;
+}
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+code {
+  background-color: rgba(219, 94, 40, 0.4) !important;
+}
+/********* LINKS **********/
+/* unvisited link */
+a:link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: #fff;
+}
+/* mouse over link */
+a:hover {
+  color: #a57f7f;
+}
+/* selected link */
+a:active {
+  color: #fff;
+}
+/**************************/
+.region-flash-message {
+  margin-top: 12px;
+  background-color: rgba(105, 156, 23, 0.1);
+}
+.flashmessage {
   font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  border-bottom: 0;
+  text-align: center;
+  outline: 1px solid rgba(105, 156, 23);
 }
-.footer-column a {
-  color: #000;
+figure.right {
+  margin-right: 0;
 }
-.site-footer.block {
-  color: #000;
-  border-top: 1px solid #000;
+figure.right img {
+  max-height: 18em;
 }
 /**
  * Base style to affect HTML elements on a general scale.
@@ -5329,37 +5329,6 @@ figcaption p {
   }
 }
 /**
- * Show off the regions used in the website, to ease styling.
- */
-.regions .outer-wrap {
-  background-color: #f4e3c9;
-  border: 1px solid #e3b774;
-}
-.regions .inner-wrap {
-  background-color: #f4e0e9;
-  border: 1px solid #d995b4;
-}
-.regions .region-header-col-1,
-.regions .region-header-col-2,
-.regions .region-header-col-3,
-.regions .region-flash,
-.regions .region-breadcrumb,
-.regions .region-flash-message,
-.regions .region-columns-above,
-.regions .region-main,
-.regions .region-after-main,
-.regions .region-columns-below,
-.regions .region-sidebar-left,
-.regions .region-sidebar-right,
-.regions .region-footer,
-.regions .region-footer-column-1,
-.regions .region-footer-column-2,
-.regions .region-footer-column-3 {
-  background-color: #b5dce1;
-  border: 1px solid #6cbac4;
-  color: #111;
-}
-/**
  * A responsive menu.
  */
 /**
@@ -5586,6 +5555,47 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-max.rm-swipe-right .rm-mobile {
   right: 0;
+}
+/**
+ * My own settings, not currently in their own module.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * General layout
+ */
+.outer-wrap-header {
+  box-shadow: 0 0 5px 2px #000;
+}
+.outer-wrap-flash {
+  outline: 0;
+  box-shadow: 0 0 5px 1px #000;
+}
+.region-header-col-2 .rm-navbar ul li a:hover {
+  color: #000;
+  background-color: rgba(225, 122, 21, 0.6);
+}
+/******** FOOOTER *********/
+.outer-wrap-footer {
+  box-shadow: 0 0 2px 1px #000;
+}
+.footer-column-wrapper {
+  color: #000;
+}
+.footer-column h4 {
+  color: #db5e28;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  border-bottom: 0;
+}
+.footer-column a {
+  color: #000;
+}
+.site-footer.block {
+  color: #000;
+  border-top: 1px solid #000;
 }
 /**
  * My own settings, not currently in their own module.
