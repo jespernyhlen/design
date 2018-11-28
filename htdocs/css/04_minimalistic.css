@@ -4817,7 +4817,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Cormorant Upright', serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5103,7 +5103,7 @@ html {
   background-color: #424242;
 }
 body {
-  font: 16px/1.5 'Roboto', sans-serif;
+  font: 16px/1.5 'Roboto Slab', serif;
   margin: 0;
   padding: 0;
   color: #000;
@@ -5542,28 +5542,28 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * My own settings, not currently in their own module.
  */
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Cormorant Upright';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cormorant Upright Regular'), local('CormorantUpright-Regular'), url(https://fonts.gstatic.com/s/cormorantupright/v4/VuJrdM3I2Y35poFONtLdafkUCHw1y1vShDA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/BngRUXZYTXPIvIBgJJSb6u9mxLCGwRg.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v7/BngMUXZYTXPIvIBgJJSb6ufN5qA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v7/BngRUXZYTXPIvIBgJJSb6u92w7CGwRg.ttf) format('truetype');
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
