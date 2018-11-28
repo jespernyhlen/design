@@ -4672,7 +4672,7 @@ figure.right img {
 }
 .wrap-sidebar .block h4 {
   border: 1px solid #21504E;
-  background-color: rgba(219, 94, 40, 0.6);
+  background-color: #4D8A86;
 }
 .inner-wrap-breadcrumb {
   margin-bottom: 0;
@@ -4805,7 +4805,9 @@ figure.left {
   color: #000;
 }
 .footer-column h4 {
-  color: #000;
+  color: #db5e28;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
   border-bottom: 0;
 }
 .footer-column a {
@@ -5116,7 +5118,7 @@ body {
   font: 16px/1.5 Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #eee;
   background-color: #2B6865;
 }
 h1 {
@@ -5579,10 +5581,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * My own settings, not currently in their own module.
  */
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1 {
+  text-shadow: 1px 1px 1px #222;
+  color: #db5e28;
   border-bottom: 0;
 }
