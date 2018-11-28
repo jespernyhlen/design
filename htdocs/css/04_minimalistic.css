@@ -5577,7 +5577,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .region-header-col-2 .rm-navbar ul li a {
   color: #5B7A2A;
-  font-weight: normal;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
 }
 .inner-wrap-flash img {
   border-radius: 20px;
