@@ -5293,6 +5293,9 @@ figcaption p {
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
+  .inner-wrap-flash img {
+    opacity: 1;
+  }
   .outer-wrap-flash-message {
     display: inline;
     float: left;
