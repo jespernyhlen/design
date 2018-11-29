@@ -1,0 +1,99 @@
+/**
+ * Style for the byline.
+ */
+
+/**
+ * Variables
+ */
+
+@bgColor: #fff;
+@magicNumber: 24px;
+@maxWidth03: 960px;
+@bgColorCode: lightgray;
+@linkColor: #222;
+/**
+ * Style
+ */
+
+.inner-wrap {
+    #desinax-vgrid.grid(@maxWidth03);
+    // margin-bottom: @magicNumber;
+}
+
+.inner-wrap-main {
+    background-color: @bgColor;
+}
+
+.inner-wrap {
+    &.inner-wrap-main {
+        min-height: @magicNumber * 18;
+    }
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, @maxWidth03);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+.right {
+    float: right;
+}
+
+.row {
+    #desinax-vgrid.row();
+}
+
+code {
+    background-color: @bgColorCode !important;
+}
+
+/********* LINKS **********/
+
+/* unvisited link */
+a:link {
+    color: @linkColor;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: @linkColor;
+}
+
+/* mouse over link */
+a:hover {
+    color: #a57f7f;
+}
+
+/* selected link */
+a:active {
+    color: @linkColor;
+}
+
+/**************************/
+
+.region-flash-message {
+    margin-top: 12px;
+    background-color: rgba(105, 156, 23, 0.1);
+}
+
+.flashmessage {
+    font-weight: bold;
+    text-align: center;
+    outline: 1px solid rgba(105,156,23);
+}
+
+figure.right {
+    margin-right: 0;
+}
+
+figure.right img {
+    max-height: 18em;
+}

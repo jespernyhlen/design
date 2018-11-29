@@ -1,0 +1,56 @@
+/**
+ * Style for the main.
+ */
+
+/**
+ * Variables
+ */
+
+@bgColorFooter: #333;
+@magicNumber: 24px;
+/**
+ * Style
+ */
+
+.outer-wrap-footer {
+    background-color: @bgColorFooter;
+}
+
+.inner-wrap-footer {
+    padding-top: @magicNumber;
+    margin-bottom: 0;
+    padding-bottom: @magicNumber * 4;
+}
+
+.footer-column-wrapper {
+    color: #ddd;
+}
+
+.footer-column {
+    #desinax-vgrid.column(@columns * 1 / 4);
+}
+
+.footer-column:nth-child(2),
+.footer-column:nth-child(3) {
+    #desinax-vgrid.push(3);
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+    color: #bbb;
+    text-align: center;
+}
+
+.site-footer.block {
+    border-top: 1px solid #666;
+}
+
+.site-footer.block p {
+    margin-top: @magicNumber * 2;
+}
+
+.footer-column a {
+    color: #ccc;
+    font-weight: bold;
+    font-style: italic;
+}
