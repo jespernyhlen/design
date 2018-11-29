@@ -43,7 +43,7 @@ Färgpalett:
 </tr>
 </table>
 
-Till viss del använder sig denna sidan av en monokromiskt färgskala för blå, men ger även inslag av
+Till viss del använder sig denna sidan av en analogt färgskala för blå, men ger även inslag av
 svart, vit och grå.
 Vit bakgrund med och mycket svart text. Sedan finns det blå färg av olika nyanser på
 text och länkar.
