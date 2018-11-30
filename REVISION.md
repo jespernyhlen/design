@@ -1,6 +1,13 @@
 Revision history
 ======================
 
+v4.0.0 (2018-11-30)
+----------------------
+
+* Adding colorthemes dark, colorful and minimalistic.
+
+
+
 v3.1.0 (2018-11-22)
 ----------------------
 
