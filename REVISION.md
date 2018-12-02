@@ -1,6 +1,13 @@
 Revision history
 ======================
 
+v4.0.1 (2018-12-02)
+----------------------
+
+* Updated rows width to remove scrollbar and accurate information on report headlines.
+
+
+
 v4.0.0 (2018-11-30)
 ----------------------
 
