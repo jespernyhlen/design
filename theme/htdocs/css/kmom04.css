@@ -4758,6 +4758,13 @@ figure.left {
   display: block;
   clear: both;
 }
+.inner-wrap-header .row,
+.inner-wrap-main .row,
+.inner-wrap-flash .row,
+.inner-wrap-footer .row {
+  margin: 0;
+  width: 100%;
+}
 code {
   background-color: lightgray !important;
 }
