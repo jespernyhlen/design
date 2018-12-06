@@ -1,29 +1,26 @@
 /*!
- * LESS version of the stylesheet for design kmom04 Colorful.
+ * LESS version of the stylesheet for design kmom05.
  *
- * This stylesheet is for the design course and kmom04.
+ * This stylesheet is for the design course and kmom05.
  *
  */
-/**
- * Imports.
- */
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: 'Nanum Gothic';
   font-style: normal;
   font-weight: 400;
-  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5Vvl4jO.ttf) format('truetype');
+  src: local('NanumGothic'), url(https://fonts.gstatic.com/s/nanumgothic/v13/PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnZKveRhf_.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEYT8L6.ttf) format('truetype');
 }
 /*!
  * LESS version of the stylesheet for design kmom04.
@@ -4470,7 +4467,7 @@ template {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
-  background-color: #DB5E28;
+  background-color: #333;
 }
 .region-header::after {
   content: "";
@@ -4478,7 +4475,7 @@ template {
   clear: both;
 }
 .outer-wrap-header {
-  background-color: #DB5E28;
+  background-color: #333;
 }
 .inner-wrap-header {
   margin-right: auto;
@@ -4492,8 +4489,8 @@ template {
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
   padding: 1.4em 0.8em;
-  background-color: #DB5E28;
-  border-bottom: 1px solid #DB5E28;
+  background-color: #333;
+  border-bottom: 1px solid #333;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {
   transition: all 0.9s;
@@ -4534,9 +4531,9 @@ template {
   padding: 24px 0;
 }
 .outer-wrap-flash {
-  background-color: #80BDB8;
-  outline: 1px solid #DB5E28;
-  opacity: 0.4;
+  background-color: #fff;
+  outline: 1px solid #333;
+  opacity: 0.15;
 }
 .inner-wrap-flash img {
   margin: 20px 0;
@@ -4610,8 +4607,8 @@ template {
   margin-left: 4.6875%;
 }
 .wrap-sidebar .block h4 {
-  border: 1px solid #21504E;
-  background-color: #4D8A86;
+  border: 1px solid #222;
+  background-color: #666;
 }
 .inner-wrap-breadcrumb {
   margin-bottom: 0;
@@ -4690,7 +4687,7 @@ figure.left {
  * Style
  */
 .outer-wrap-footer {
-  background-color: #4D8A86;
+  background-color: #333;
 }
 .inner-wrap-footer {
   padding-top: 24px;
@@ -4746,7 +4743,7 @@ figure.left {
   max-width: 960px;
 }
 .inner-wrap-main {
-  background-color: #2B6865;
+  background-color: #444;
 }
 .inner-wrap.inner-wrap-main {
   min-height: 432px;
@@ -4793,18 +4790,18 @@ figure.left {
   width: 100%;
 }
 code {
-  background-color: rgba(219, 94, 40, 0.4) !important;
+  background-color: #222 !important;
 }
 /********* LINKS **********/
 /* unvisited link */
 a:link {
-  color: #fff;
+  color: #eee;
   font-weight: 600;
   text-decoration: none;
 }
 /* visited link */
 a:visited {
-  color: #fff;
+  color: #eee;
 }
 /* mouse over link */
 a:hover {
@@ -4812,7 +4809,7 @@ a:hover {
 }
 /* selected link */
 a:active {
-  color: #fff;
+  color: #eee;
 }
 /**************************/
 .region-flash-message {
@@ -4842,7 +4839,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5128,11 +5125,11 @@ html {
   background-color: #424242;
 }
 body {
-  font: 16px/1.5 'Montserrat', sans-serif;
+  font: 16px/1.5 'Quicksand', serif;
   margin: 0;
   padding: 0;
   color: #eee;
-  background-color: #2B6865;
+  background-color: #444;
 }
 h1 {
   font-weight: 500;
@@ -5247,14 +5244,14 @@ figcaption p {
 @media screen and (max-width: 800px) {
   /********** NAVBAR *********/
   .inner-wrap-header .row {
-    background-color: #fff;
+    background-color: #333;
     position: fixed;
     border-bottom: 1px solid lightgray;
   }
   .outer-wrap-flash {
-    background-color: #f7f7f7;
+    background-color: #606060;
     padding-top: 72px;
-    outline: 1px solid #fff;
+    outline: 1px solid lightgray;
     opacity: 1;
   }
   .style-page {
@@ -5571,44 +5568,12 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * and other regions of the page including route specific styles.
  */
 /**
- * General layout
- */
-.outer-wrap-header {
-  box-shadow: 0 0 5px 2px #000;
-}
-.outer-wrap-flash {
-  outline: 0;
-  box-shadow: 0 0 5px 1px #000;
-}
-.region-header-col-2 .rm-navbar ul li a:hover {
-  color: #000;
-  background-color: rgba(225, 122, 21, 0.6);
-}
+  * General layout
+  */
 /******** FOOOTER *********/
-.outer-wrap-footer {
-  box-shadow: 0 0 2px 1px #000;
-}
-.footer-column-wrapper {
-  color: #000;
-}
 .footer-column h4 {
-  color: #db5e28;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  border-bottom: 0;
-}
-.footer-column a {
-  color: #000;
-}
-.site-footer.block {
-  color: #000;
-  border-top: 1px solid #000;
+  border-bottom: 1px solid #aaa;
 }
 /**
  * My own settings, not currently in their own module.
  */
-h1 {
-  text-shadow: 1px 1px 1px #222;
-  color: #db5e28;
-  border-bottom: 0;
-}
