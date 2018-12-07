@@ -4488,7 +4488,7 @@ template {
 }
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
-  padding: 1.4em 0.8em;
+  padding: 1.4em 0.4em;
   background-color: #333;
   border-bottom: 1px solid #333;
 }

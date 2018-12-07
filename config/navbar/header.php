@@ -66,7 +66,12 @@ return [
         [
             "text" => "Rapport",
             "url" => "rapport",
-            "title" => "Rapporter indom design.",
+            "title" => "Rapporter inom design.",
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Blogg inom design.",
         ],
     ],
 ];
