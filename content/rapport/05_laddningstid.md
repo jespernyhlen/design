@@ -26,7 +26,7 @@ En mer grundläggande mätning görs i Google Pagespeed för samtliga sidor. En 
 
 Resultat
 -----------------------
-Dessa resultat kommer från 5 inladdningar utav samtliga sidor från verktyget Devtools, detta är medelvärdet presenterat för samtliga undersidor. Medelvärdet från Googles verktyg Google Pagespeed presenteras även.
+Dessa resultat kommer från 5 inladdningar utav samtliga sidor från verktyget Devtools, detta är medelvärdet presenterat för samtliga undersidor. Medelvärdet från Googles verktyg Google Pagespeed presenteras även. [Resultat presenterat i Google spreadsheet.](https://docs.google.com/spreadsheets/d/1fnEKmnzjyZ9-_5PkUyF_BusmNtnzosasv9-mL0FIHLA/edit?usp=sharing)
 
 #### www.yr.no
 
@@ -111,7 +111,7 @@ För de två sämst presterande webbplatserna trodde jag alla bilder, i platsens
 Referenser
 -----------------------
 
-https://developers.google.com/
+[https://developers.google.com/](https://developers.google.com/)
 
 Övrigt
 -----------------------
