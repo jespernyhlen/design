@@ -4470,6 +4470,7 @@ template {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
+  max-width: 100%;
   background-color: #DB5E28;
 }
 .region-header::after {
@@ -4788,6 +4789,7 @@ figure.left {
 .inner-wrap-header .row,
 .inner-wrap-main .row,
 .inner-wrap-flash .row,
+.inner-wrap-breadcrumb .row,
 .inner-wrap-footer .row {
   margin: 0;
   width: 100%;
