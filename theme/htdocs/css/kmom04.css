@@ -4800,9 +4800,6 @@ a:active {
 figure.right {
   margin-right: 0;
 }
-figure.right img {
-  max-height: 18em;
-}
 /**
  * Base style to affect HTML elements on a general scale.
  */

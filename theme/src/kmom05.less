@@ -7,7 +7,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Quicksand:400,700');
-@import "kmom04.less";
+@import "module/kmom05.less";
 @import "layout/layout_kmom04_dark.less";
 @import "layout/kmom05.less";
 
@@ -62,3 +62,25 @@
 @sidebarHeadBorderColor: #222;
 
 @opacityFlash: 0.15;
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    @maxContentWidth: 670px;
+    #desinax-figure.figure(@maxContentWidth);
+}

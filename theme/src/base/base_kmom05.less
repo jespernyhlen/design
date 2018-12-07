@@ -1,0 +1,67 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #111;
+// @fontFamilyBody: sans-serif;
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    // font: 100.01%/1 @fontFamilyBody;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+ul {
+    padding: 0;
+    margin: @magicNumber 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+fieldset {
+    #desinax-vgrid.column(@columns);
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+fieldset select {
+    #desinax-vgrid.column(@columns);
+    font-style: italic;
+    font-weight: bold;
+}
+
+figure {
+    margin: 0 20px;
+}
+
+figcaption p {
+    margin-top: @magicNumber * 3 / 4;
+    font-style: italic;
+}

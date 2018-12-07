@@ -23,9 +23,9 @@
   src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEYT8L6.ttf) format('truetype');
 }
 /*!
- * LESS version of the stylesheet for design kmom04.
+ * LESS version of the stylesheet for design kmom05.
  *
- * This stylesheet is for the design course and kmom04.
+ * This stylesheet is for the design course and kmom05.
  *
  */
 /**
@@ -4824,9 +4824,6 @@ a:active {
 figure.right {
   margin-right: 0;
 }
-figure.right img {
-  max-height: 18em;
-}
 /**
  * Base style to affect HTML elements on a general scale.
  */
@@ -5296,13 +5293,6 @@ figcaption p {
     font-size: 1.5em;
     padding-top: 0.75em;
   }
-  figure.right {
-    display: inline;
-    float: left;
-    width: 98.95833333%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
   /********** NAVBAR *********/
   .rm-desktop {
     display: none;
@@ -5581,6 +5571,24 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
   * General layout
   */
+.transp-text {
+  color: rgba(255, 255, 255, 0.3);
+}
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+/**
+ * My own settings, not currently in their own module.
+ */
 figure.figure,
 figure.asciinema,
 figure.codepen,
@@ -5697,18 +5705,106 @@ figure.codepen,
 figure.figure-codepen {
   width: 100%;
 }
-/**
- * Figure and figcaption for images and other media using figure/figcaption
- */
-/**
- * Figure with ASCIINEMA
- */
-/**
- * Figure with Codepen
- */
-/** --------------------------------------------------------------
- * Figure through .figure
- */
-/**
- * My own settings, not currently in their own module.
- */
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 586px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 586.25px;
+  }
+}
+@media screen and (max-width: 447px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 446.66666667px;
+  }
+}
+@media screen and (max-width: 419px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 418.75px;
+  }
+}
+@media screen and (max-width: 335px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 335px;
+  }
+}
+@media screen and (max-width: 223px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 223.33333333px;
+  }
+}
