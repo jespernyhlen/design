@@ -1,6 +1,13 @@
 Revision history
 ======================
 
+v5.0.0 (2018-12-07)
+----------------------
+
+* Included and activated desinax/figure and Cimage to process images for kmom05.
+
+
+
 v4.0.1 (2018-12-02)
 ----------------------
 
