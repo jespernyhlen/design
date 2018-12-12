@@ -1,0 +1,86 @@
+/*!
+ * LESS version of the stylesheet for design kmom06.
+ *
+ * This stylesheet is for the design course and kmom06.
+ *
+ */
+
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Quicksand:400,700');
+@import "module/kmom06.less";
+@import "layout/layout_kmom04_dark.less";
+@import "layout/kmom06.less";
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+ // Default grid, change to fit your requirements.
+ @columnWidth:   30;
+ @gutterWidth:   10;
+ @columns:       24;
+ @gridType:      "float"; // "flex"
+
+// Magic number and default fontsize, together makes up base lineheight
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+// Adapt the typographic grid to my style
+@fontFamilyHeadings:  'Nanum Gothic', sans-serif;  //@fontFamilyMyriadPro;
+@fontFamilyBody:      'Quicksand', serif;
+@fontFamilyCode:      @fontFamilyCalibri;
+
+
+@magicNumber: 24px;
+@maxWidth03: 960px;
+
+// Textcolor
+@colorBody: #eee;
+@navLinkColor: #444;
+@linkColor: #eee;
+
+// Background colors
+
+@bgColorBody: #444;
+@bgColor: #444;
+@bgColorNav: #333;
+@sidebarHeadColor: #666;
+@bgColorCode: #222;
+@flashBgColor: #fff;
+@bgColorFooter: #333;
+@bgColorNavResponsive: #333;
+@bgColorFlashResponsive: #606060;
+
+@generalBorder: lightgray;
+@sidebarHeadBorderColor: #222;
+
+@opacityFlash: 0.15;
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    @maxContentWidth: 670px;
+    #desinax-figure.figure(@maxContentWidth);
+}
