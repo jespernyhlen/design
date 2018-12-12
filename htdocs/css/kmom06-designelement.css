@@ -5576,6 +5576,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .transp-text {
   color: rgba(255, 255, 255, 0.3);
 }
+.outer-wrap-flash {
+  display: none;
+}
 /**
  * Figure and figcaption for images and other media using figure/figcaption
  */
