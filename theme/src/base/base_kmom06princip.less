@@ -1,0 +1,85 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #111;
+// @fontFamilyBody: sans-serif;
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    // font: 100.01%/1 @fontFamilyBody;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #F63;
+    border-bottom: none;
+    // font-family: 'Pontano Sans', sans-serif;
+}
+
+@fontSizeH1: 1.975em;
+@fontSizeH2: 1.75em;
+@fontSizeH3: 1.5em;
+@fontSizeH4: 1.5em;
+@fontSizeH5: 1.25em;
+
+h1 {
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+
+ul {
+    padding: 0;
+    margin: @magicNumber 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+fieldset {
+    #desinax-vgrid.column(@columns);
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+fieldset select {
+    #desinax-vgrid.column(@columns);
+    font-style: italic;
+    font-weight: bold;
+}
+
+figure {
+    margin: 0 20px;
+}
+
+figcaption p {
+    margin-top: @magicNumber * 3 / 4;
+    font-style: italic;
+}

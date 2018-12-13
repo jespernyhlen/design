@@ -1,0 +1,89 @@
+/*!
+ * LESS version of the stylesheet for design kmom06.
+ *
+ * This stylesheet is for the design course and kmom06.
+ *
+ */
+
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Pontano+Sans');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import "module/kmom06princip.less";
+@import "layout/layout_kmom04_dark.less";
+@import "layout/kmom06princip.less";
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+
+/**
+ * My own settings, not currently in their own module.
+ */
+ // Default grid, change to fit your requirements.
+ @columnWidth:   30;
+ @gutterWidth:   10;
+ @columns:       24;
+ @gridType:      "float"; // "flex"
+
+// Magic number and default fontsize, together makes up base lineheight
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+// Adapt the typographic grid to my style
+@fontFamilyHeadings:  'Abril Fatface', cursive;  //@fontFamilyMyriadPro;
+@fontFamilyBody:      'Quicksand', serif;
+@fontFamilyCode:      @fontFamilyCalibri;
+
+
+@magicNumber: 24px;
+@maxWidth03: 960px;
+
+// Textcolor
+@colorBody: #eee;
+@navLinkColor: #444;
+@linkColor: #eee;
+
+// Background colors
+
+@bgColorBody: #444;
+@bgColor: #444;
+@bgColorNav: #eee;
+@sidebarHeadColor: #666;
+@bgColorCode: #222;
+@flashBgColor: #fff;
+@bgColorFooter: #23272e;
+@bgColorNavResponsive: #eee;
+@bgColorFlashResponsive: #606060;
+
+@generalBorder: lightgray;
+@sidebarHeadBorderColor: #222;
+
+@opacityFlash: 0.15;
+
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    @maxContentWidth: 670px;
+    #desinax-figure.figure(@maxContentWidth);
+}
