@@ -5216,7 +5216,7 @@ figcaption p {
  * Layout for responsive style through media queries.
  */
 /********** RESPONSIVE 1, 2, 3 *********/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .region-main {
     display: inline;
     float: left;
@@ -5279,17 +5279,16 @@ figcaption p {
     margin-left: 0.52083333%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   /********** NAVBAR *********/
   .inner-wrap-header .row {
     background-color: #F63;
     position: fixed;
-    border-bottom: 1px solid lightgray;
   }
   .outer-wrap-flash {
     background-color: #606060;
     padding-top: 72px;
-    outline: 1px solid lightgray;
+    outline: 0px;
     opacity: 1;
   }
   .style-page {
@@ -5301,8 +5300,9 @@ figcaption p {
   .rm-navbar-max {
     display: inline;
   }
-  .region-header {
-    padding-bottom: 24px;
+  i.fas {
+    border: 0;
+    top: -0.5vw;
   }
   .region-header-col-1,
   .region-header-col-3 {
@@ -5331,8 +5331,11 @@ figcaption p {
 }
 @media screen and (max-width: 700px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding-top: 0.75em;
+  }
+  h1.index-title {
+    font-size: 4em;
   }
   /********** NAVBAR *********/
   .rm-desktop {
@@ -5669,6 +5672,7 @@ i {
   width: 100%;
   position: fixed;
   z-index: 1;
+  min-height: 60px;
 }
 .inner-wrap-header {
   margin-right: auto;

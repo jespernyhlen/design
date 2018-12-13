@@ -7,7 +7,7 @@
 
  /********** RESPONSIVE 1, 2, 3 *********/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .region-main {
         #desinax-vgrid.column(@columns - 2);
         #desinax-vgrid.push(1);
@@ -55,19 +55,18 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
 
     /********** NAVBAR *********/
     .inner-wrap-header .row {
         background-color: @bgColorNavResponsive;
         position: fixed;
-        border-bottom: 1px solid lightgray;
     }
 
     .outer-wrap-flash {
         background-color: @bgColorFlashResponsive;
         padding-top: 72px;
-        outline: 1px solid @generalBorder;
+        outline: 0px;
         opacity: 1;
     }
 
@@ -83,8 +82,13 @@
         display: inline;
     }
 
-    .region-header {
-        padding-bottom: @magicNumber;
+    // .region-header {
+    //     padding-bottom: @magicNumber;
+    // }
+
+    i.fas {
+        border: 0;
+        top: -0.5vw;
     }
 
     .region-header-col-1,
@@ -110,8 +114,12 @@
 
 @media screen and (max-width: 700px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1.8em;
         padding-top: 0.75em;
+    }
+
+    h1.index-title {
+        font-size: 4em;
     }
 
     // figure.right {
