@@ -4475,7 +4475,6 @@ template {
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
   padding: 1.4em 0.4em;
-  background-color: #F3F7F3;
   border-bottom: 1px solid #F3F7F3;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {

@@ -5,14 +5,163 @@
 
 
 
+
  /**
   * General layout
   */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      color: #F63;
+  }
+
+/************ INDEXPAGE ***********/
+.index-content {
+    display: block !important;
+    height: 91vh;
+}
+
+.index-title {
+    transform: rotate(9deg);
+    width: 90%;
+    left: 7.5vw;
+    position: absolute;
+    font-size: 10em;
+    text-align: center;
+    border: 0;
+    bottom: 41vh;
+}
+
+h1.index-title {
+    color: #fff;
+}
+
+// .index-border {
+//     border-top: 2px solid #fff;
+//     position: absolute;
+//     width: 960px;
+//     height: 0;
+//     bottom: 40vh;
+// }
+
+i {
+    border: solid #ff4500;
+    border-width: 0 .4vw .4vw 0;
+    display: inline-block;
+    padding: 1.5vw;
+    position: absolute;
+    left: 1.258vw;
+    border-radius: 3px;
+    bottom: 2vw;
+}
+
+.arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-down {
+    border: 3px solid rgba(255,255,255,0.1);
+    display: inline-block;
+    border-radius: 31%;
+    padding: 3vw;
+    left: 48.2vw;
+    border-style: outset;
+    position: absolute;
+    bottom: 1.86vw;
+    // animation: MoveDown 3s ease-in-out infinite;
+}
+
+// @keyframes MoveDown {
+//     0%, 100% {
+//         bottom: 30vh;
+//     }
+//     50% {
+//         bottom: 20vh;
+//     }
+// }
 
 .transp-text {
     color: rgba(255, 255, 255, 0.3);
 }
 
+body {
+    background: rgb(30,30,73);
+    background: linear-gradient(9deg,#c050 79%,#F63 0%);
+}
+
+.outer-wrap-header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.inner-wrap-header {
+    width: 100%;
+}
+
+.region-header {
+    // background-color: @bgColorNav;
+}
+
+.region-header-col-2 .rm-navbar ul li a {
+    // background-color: @bgColorNav;
+    // border-bottom: 1px solid @bgColorNav;
+    color: #fff;
+}
+
+.rm-default ul li {
+    background-color: #F63;
+}
+
+.figure.figure img {
+    box-shadow: 0 0 1px 3px rgba(255,255,255,0.8);
+}
+
+.site-logo-text a {
+    color: #fff;
+}
+
+.outer-wrap-main {
+    padding-top: @magicNumber * 5;
+}
+
+.inner-wrap-main {
+    background-color: inherit;
+}
+
+.main-text {
+    #desinax-vgrid.column(@columns * 1 / 2 - 1);
+    float: none;
+    display: block;
+}
+
+.style-page {
+    margin-top: @magicNumber * 8;
+}
+
+.outer-wrap-breadcrumb {
+    padding-top: @magicNumber * 5;
+    margin-bottom: -@magicNumber * 5;
+}
+
 .outer-wrap-flash {
+    display: inline-block;
+    height: 20vh;
+}
+
+.region-flash img {
     display: none;
+}
+
+.author-byline {
+    margin-left: 5px;
+}
+
+.me-small {
+    margin-left: 3px;
 }

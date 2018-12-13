@@ -4493,7 +4493,6 @@ template {
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
   padding: 1.4em 0.4em;
-  background-color: #DB5E28;
   border-bottom: 1px solid #DB5E28;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {
