@@ -4498,7 +4498,7 @@ template {
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
   max-width: 100%;
-  background-color: #F63;
+  background-color: #fff;
 }
 .region-header::after {
   content: "";
@@ -4506,7 +4506,7 @@ template {
   clear: both;
 }
 .outer-wrap-header {
-  background-color: #F63;
+  background-color: #fff;
 }
 .inner-wrap-header {
   margin-right: auto;
@@ -4520,7 +4520,7 @@ template {
 .region-header-col-2 .rm-navbar ul li a {
   text-decoration: none;
   padding: 1.4em 0.4em;
-  border-bottom: 1px solid #F63;
+  border-bottom: 1px solid #fff;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {
   transition: all 0.9s;
@@ -4562,7 +4562,7 @@ template {
 }
 .outer-wrap-flash {
   background-color: #fff;
-  outline: 1px solid #F63;
+  outline: 1px solid #fff;
   opacity: 0.15;
 }
 .inner-wrap-flash img {
@@ -4770,10 +4770,10 @@ figure.left {
 .inner-wrap {
   margin-right: auto;
   margin-left: auto;
-  max-width: 960px;
+  max-width: 1080px;
 }
 .inner-wrap-main {
-  background-color: #444;
+  background-color: #fff;
 }
 .inner-wrap.inner-wrap-main {
   min-height: 432px;
@@ -4782,9 +4782,9 @@ figure.left {
   background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
   background-size: 100% auto;
 }
-@media (min-width: 960px) {
+@media (min-width: 1080px) {
   .vgrid .inner-wrap {
-    background-size: 960px auto;
+    background-size: 1080px auto;
   }
 }
 .vgrid .inner-wrap.inner-wrap-header,
@@ -4826,13 +4826,13 @@ code {
 /********* LINKS **********/
 /* unvisited link */
 a:link {
-  color: #eee;
+  color: #222;
   font-weight: 600;
   text-decoration: none;
 }
 /* visited link */
 a:visited {
-  color: #eee;
+  color: #222;
 }
 /* mouse over link */
 a:hover {
@@ -4840,7 +4840,7 @@ a:hover {
 }
 /* selected link */
 a:active {
-  color: #eee;
+  color: #222;
 }
 /**************************/
 .region-flash-message {
@@ -5156,8 +5156,8 @@ body {
   font: 16px/1.5 'Quicksand', serif;
   margin: 0;
   padding: 0;
-  color: #eee;
-  background-color: #444;
+  color: #222;
+  background-color: #fff;
 }
 h1,
 h2,
@@ -5282,7 +5282,7 @@ figcaption p {
 @media screen and (max-width: 950px) {
   /********** NAVBAR *********/
   .inner-wrap-header .row {
-    background-color: #F63;
+    background-color: #fff;
     position: fixed;
   }
   .outer-wrap-flash {
@@ -5616,27 +5616,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   * General layout
   */
 /************ INDEXPAGE ***********/
-.index-content {
-  display: block !important;
-  height: 89.6vh;
-}
 .index-title {
-  padding: 50vh 0 0;
-  width: 100%;
-  left: 0vw;
-  position: absolute;
-  font-size: 7em;
-  font-weight: 600;
-  font-style: italic;
-  text-align: center;
-  bottom: 48vh;
-  background: #f63;
-  box-shadow: 0 5px 1px 1px rgba(0, 0, 0, 0.2);
-  border-bottom: none;
-}
-h1.index-title {
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  display: none;
 }
 h1.main-text {
   margin-top: -5px;
@@ -5664,6 +5645,20 @@ i {
   border-style: outset;
   position: absolute;
   bottom: 1.86vw;
+  animation: MoveDown 0.5s ease-in-out infinite;
+}
+@keyframes MoveDown {
+  0%,
+  100% {
+    bottom: 6vh;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.03);
+    opacity: 0;
+  }
+  80% {
+    bottom: 1.86vh;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.8);
+    opacity: 0.7;
+  }
 }
 .transp-text {
   color: rgba(255, 255, 255, 0.3);
@@ -5680,6 +5675,9 @@ i {
   max-width: 1440px;
   width: 100%;
 }
+.region-header {
+  max-width: inherit;
+}
 .region-header .rm-navbar ul li a {
   font-weight: 400;
   letter-spacing: -1.5px;
@@ -5687,12 +5685,12 @@ i {
   padding: 0.6em 0.4em;
 }
 .region-header-col-2 .rm-navbar ul li a {
-  color: #fff;
+  color: #222;
 }
 .region-header-col-2 .rm-navbar ul li a:hover {
-  color: #000;
+  color: #fff;
   transition: all 1s ease-in;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .rm-default ul li {
   background-color: #F63;
@@ -5707,10 +5705,22 @@ i {
 .site-logo-text a {
   font-weight: 400;
   font-size: 2em;
-  color: #fff;
+  color: #222;
+}
+.outer-wrap-main {
+  padding-top: 120px;
 }
 .inner-wrap-main {
   background-color: inherit;
+  animation: shake 0.7s ease-in;
+}
+@keyframes shake {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.02);
+  }
 }
 .region-sidebar-left {
   border-right: 2px solid #555;
@@ -5737,8 +5747,55 @@ i {
   outline: 1px solid rgba(255, 103, 23, 0.7);
 }
 .outer-wrap-flash {
-  display: inline-block;
-  height: 20vh;
+  /* Full height */
+  height: 30vh;
+  /* Create the parallax scrolling effect */
+  opacity: 0.9;
+  animation: MoveDownOuter 1.25s ease-in;
+  overflow: hidden;
+}
+.inner-wrap-flash {
+  max-width: 100vw;
+  height: 30vh;
+  background-image: url("../img/flashpic.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: MoveDown 12s ease-in-out infinite;
+  background-position-y: 55px;
+  transform: scale(1);
+}
+@keyframes MoveDownOuter {
+  0%,
+  100% {
+    height: 30vh;
+  }
+  30% {
+    height: 30vh;
+    transform: scale(1);
+  }
+}
+@keyframes MoveDown {
+  0%,
+  100% {
+    height: 30vh;
+    background-position-y: -500px;
+  }
+  30% {
+    background-position-y: 55px;
+    height: 30vh;
+    transform: scale(1);
+  }
+}
+.vgrid .inner-wrap-flash {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 1440px) {
+  .vgrid .inner-wrap-flash {
+    background-size: 1440px auto;
+  }
 }
 .region-flash img {
   display: none;
@@ -5758,10 +5815,10 @@ i {
 }
 .footer-column h4 {
   border-bottom: 0;
-  color: #fff;
+  color: #222;
 }
 .site-footer.block {
-  color: #fff;
+  color: #222;
 }
 /**
  * Figure and figcaption for images and other media using figure/figcaption

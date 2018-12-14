@@ -17,28 +17,30 @@
 
 /************ INDEXPAGE ***********/
 .index-content {
-    display: block !important;
-    height: 89.6vh;
+    // display: block !important;
+    // height: 89.6vh;
+    // background-image: url("../img/sumatrasurf.jpg");
 }
 
 .index-title {
-    padding: 50vh 0 0;
-    width: 100%;
-    left: 0vw;
-    position: absolute;
-    font-size: 7em;
-    font-weight: 600;
-    font-style: italic;
-    text-align: center;
-    bottom: 48vh;
-    background: #f63;
-    box-shadow: 0 5px 1px 1px rgba(0,0,0,0.2);
-    border-bottom: none;
+    display: none;
+    // padding: 50vh 0 0;
+    // width: 100%;
+    // left: 0vw;
+    // position: absolute;
+    // font-size: 7em;
+    // font-weight: 600;
+    // font-style: italic;
+    // text-align: center;
+    // bottom: 48vh;
+    // background: #f63;
+    // box-shadow: 0 5px 1px 1px rgba(0,0,0,0.2);
+    // border-bottom: none;
 }
 
 h1.index-title {
-    color: #fff;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    // color: #fff;
+    // font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 h1.main-text {
@@ -78,21 +80,22 @@ i {
     border-style: outset;
     position: absolute;
     bottom: 1.86vw;
-    // animation: MoveDown 2s ease-in-out infinite;
+    animation: MoveDown 0.5s ease-in-out infinite;
 }
 
-// @keyframes MoveDown {
-//     0%, 100% {
-//         bottom: 6vh;
-//         box-shadow: 0 0 6px 2px rgba(255,255,255,0.03);
-//         opacity: 0;
-//     }
-//     80% {
-//         bottom: 1.86vh;
-//         box-shadow: 0 0 20px 4px rgba(255,255,255,0.8);
-//         opacity: 0.7;
-//     }
-// }
+@keyframes MoveDown {
+    0%, 100% {
+        bottom: 6vh;
+        box-shadow: 0 0 6px 2px rgba(0,0,0,0.03);
+        opacity: 0;
+    }
+    80% {
+        bottom: 1.86vh;
+        box-shadow: 0 0 20px 4px rgba(0,0,0,0.8);
+        opacity: 0.7;
+    }
+}
+
 
 .transp-text {
     color: rgba(255, 255, 255, 0.3);
@@ -116,6 +119,7 @@ body {
 
 .region-header {
     // background-color: @bgColorNav;
+    max-width: inherit;
 }
 
 .region-header .rm-navbar ul li a {
@@ -128,13 +132,13 @@ body {
 .region-header-col-2 .rm-navbar ul li a {
     // background-color: @bgColorNav;
     // border-bottom: 1px solid @bgColorNav;
-    color: #fff;
+    color: #222;
 }
 
 .region-header-col-2 .rm-navbar ul li a:hover {
-    color: #000;
+    color: #fff;
     transition: all 1s ease-in;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .rm-default ul li {
@@ -153,16 +157,27 @@ body {
 .site-logo-text a {
     font-weight: 400;
     font-size: 2em;
-    color: #fff;
+    color: #222;
 }
 
 .outer-wrap-main {
-    // padding-top: @magicNumber * 5;
+    padding-top: @magicNumber * 5;
     // min-height: 750px;
 }
 
 .inner-wrap-main {
     background-color: inherit;
+    animation: shake 0.7s ease-in;
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(0.9);
+        // opacity: 0;
+    }
+    50% {
+        transform: scale(1.02);
+    }
 }
 
 .region-sidebar-left {
@@ -205,9 +220,77 @@ body {
 }
 
 .outer-wrap-flash {
-    display: inline-block;
-    height: 20vh;
+    /* Full height */
+    height: 30vh;
+    /* Create the parallax scrolling effect */
+    opacity: 0.9;
+    // opacity: 1;
+    animation: MoveDownOuter 1.25s ease-in;
+    overflow: hidden;
 }
+
+
+.inner-wrap-flash {
+    max-width: 100vw;
+    height: 30vh;
+    background-image: url("../img/flashpic.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: MoveDown 12s ease-in-out infinite;
+    background-position-y: 55px;
+    transform: scale(1);
+}
+
+@keyframes MoveDownOuter {
+    0%, 100% {
+        // transform: scale(0.8);
+        height: 30vh;
+        // opacity: 0;
+    }
+    30% {
+        height: 30vh;
+        transform: scale(1);
+    }
+}
+
+@keyframes MoveDown {
+    0%, 100% {
+        // transform: scale(0.8);
+        height: 30vh;
+        background-position-y: -500px;
+        // opacity: 0;
+    }
+    30% {
+        background-position-y: 55px;
+        height: 30vh;
+        transform: scale(1);
+    }
+}
+
+.vgrid .inner-wrap-flash {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1440px);
+}
+
+// @keyframes flashDown {
+//     0% {
+//         // box-shadow: 0 0 6px 2px rgba(0,0,0,0.03);
+//         opacity: 0;
+//     }
+//     100% {
+//         // box-shadow: 0 0 20px 4px rgba(0,0,0,0.8);
+//         // opacity: 0.7;
+//
+//         bottom: 0;
+//         height: 100%;
+//         height: 70vh;
+//         background-image: url("../img/sumatrasurf.jpg");
+//
+//     }
+// }
 
 .region-flash img {
     display: none;
@@ -232,9 +315,9 @@ body {
 
 .footer-column h4 {
     border-bottom: 0;
-    color: #fff;
+    color: #222;
 }
 
 .site-footer.block {
-    color: #fff;
+    color: #222;
 }
