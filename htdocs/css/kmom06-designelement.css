@@ -5191,6 +5191,9 @@ fieldset {
   height: 100%;
   overflow-y: scroll;
   overflow-x: scroll;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 fieldset select {
   display: inline;
@@ -5292,7 +5295,8 @@ figcaption p {
     opacity: 1;
   }
   .style-page {
-    padding-top: 72px;
+    padding-top: 0;
+    margin-top: 72px;
   }
   .rm-desktop {
     display: none;
@@ -5300,9 +5304,26 @@ figcaption p {
   .rm-navbar-max {
     display: inline;
   }
+  #rm-menu {
+    color: #F63;
+    background-color: #000;
+  }
+  #rm-menu-button {
+    padding: 0;
+  }
+  .rm-show-submenu li a {
+    color: #F63;
+    background-color: #000;
+  }
   i.fas {
+    padding: 10px 30px;
+    color: #fff;
     border: 0;
     top: -0.5vw;
+  }
+  .rm-button.rm-clicked .rm-button-face-2 a {
+    top: 0vw;
+    color: #fff;
   }
   .region-header-col-1,
   .region-header-col-3 {
@@ -5323,7 +5344,6 @@ figcaption p {
     margin-right: 0.52083333%;
     margin-left: 4.6875%;
     font-weight: normal;
-    margin-top: 96px;
   }
   .inner-wrap-main {
     margin-top: 0;

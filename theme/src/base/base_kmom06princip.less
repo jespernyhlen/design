@@ -36,6 +36,12 @@ h6 {
     border-bottom: none;
     // font-family: 'Pontano Sans', sans-serif;
     animation: colorChange 20s linear infinite;
+    font-weight: 400;
+    text-shadow: 0 0 0.1px;
+}
+
+h1 a:link {
+    font-weight: 100;
 }
 
 @keyframes colorChange {
@@ -60,14 +66,14 @@ h6 {
     }
     50% {
         transform: scaleX(0.95);
-        color: #2D2E59;
+        color: #3639a0;
     }
     51% {
         transform: scaleX(1);
     }
     74% {
         transform: scaleX(1);
-        color: #2D2E59;
+        color: #3639a0;
     }
     75% {
         transform: scaleX(0.95);
@@ -135,6 +141,9 @@ fieldset {
     height: 100%;
     overflow-y: scroll;
     overflow-x: scroll;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 fieldset select {
