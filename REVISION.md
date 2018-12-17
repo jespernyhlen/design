@@ -1,6 +1,14 @@
 Revision history
 ======================
 
+v6.0.0 (2018-12-77)
+----------------------
+
+* Included two new themes, kmom06-designelement and kmom06-designprinciper.
+
+
+
+
 v5.0.0 (2018-12-07)
 ----------------------
 
