@@ -23,7 +23,7 @@ views:
 
 <h1 class="main-text">Min me-sida i kursen design</h1>
 
-[FIGURE src="image/me.jpg?w=400&area=5,15,0,0" class="right w40" caption="Bild på mig, Jesper Nyhlén"]
+[FIGURE src="image/me1.jpg?w=400&area=5,15,0,0" class="right w40" caption="Bild på mig, Jesper Nyhlén"]
 
 Som du säkert förstått vid det här laget så är mitt namn Jesper Nyhlén. Jag är 25 år gammal och uppvuxen i Malung, en by i de djupa skogarna av Dalarna. Jag var ett aktivt barn och det medförde att jag under ungdomens år testade på de allra flesta sporter som går att testa. Dock fann jag även ett annat intresse allt efter att åren gick. Det var datorer och teknologi i allmänhet, vilket tog mig vidare till att studera teknisk linje på gymnasiet. Intresse till teknologi har alltid hållit i sig men i varierad grad.
 
